@@ -1,6 +1,6 @@
 ﻿technology,value
 SolarPV,0.01
-WindOnshore,0.01
-ElectricHeater,0.05
-HydroPower,0.01
+WindOnshore,0.05
+ElectricHeater,0.01
+HydroPower,0.05
 DieselGenerator,1
