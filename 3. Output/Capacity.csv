@@ -1,7 +1,7 @@
 Technology,Value
-SolarPV,0.013616480818999884
-WindOnshore,1.9988213578909126
+SolarPV,0.0
+WindOnshore,0.0
 ElectricHeater,0.4254
-HydroPower,1.5839454267741155
-DieselGenerator,0.29152753769956935
-DieselImports,999.0
+HydroPower,0.83994814644006
+DieselGenerator,1.278578513273855
+DieselImports,1.278578513273855
