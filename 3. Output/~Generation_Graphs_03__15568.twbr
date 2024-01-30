@@ -178,9 +178,6 @@
             <map to='#ac300e'>
               <bucket>&quot;GasPowerPlant&quot;</bucket>
             </map>
-            <map to='#d3d3d3'>
-              <bucket>&quot;Curtailment&quot;</bucket>
-            </map>
             <map to='#d4a6c8'>
               <bucket>&quot;Battery&quot;</bucket>
             </map>
@@ -198,6 +195,9 @@
             </map>
             <map to='#f1ce63'>
               <bucket>&quot;ElectricHeater&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Curtailment&quot;</bucket>
             </map>
             <map to='#ffeb3b'>
               <bucket>&quot;SolarPV&quot;</bucket>
@@ -310,8 +310,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='12' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97916' id='11' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+            <zone h='100000' id='14' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='13' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
                 <zone fixed-size='280' h='97916' id='3' is-fixed='true' name='Blatt 1' w='88652' x='586' y='1042'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -321,7 +321,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='24219' id='8' name='Blatt 1' pane-specification-id='0' param='[federated.05oclpd0di546711f7y661pm4vap].[none:Technology:nk]' type-v2='color' w='10176' x='89238' y='1042'>
+                <zone h='26823' id='8' name='Blatt 1' pane-specification-id='0' param='[federated.05oclpd0di546711f7y661pm4vap].[none:Technology:nk]' type-v2='color' w='10176' x='89238' y='1042'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -379,7 +379,7 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='8' />
+      <active id='-1' />
       <simple-id uuid='{DF2F0EBE-65DC-4D8B-9E98-159A979D9C58}' />
     </window>
   </windows>
