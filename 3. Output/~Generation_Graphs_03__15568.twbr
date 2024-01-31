@@ -12,6 +12,7 @@
     <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
     <SetMembershipControl />
     <SheetIdentifierTracking />
+    <SortTagCleanup />
     <WindowsPersistSimpleIdentifiers />
   </document-format-change-manifest>
   <preferences>
@@ -148,7 +149,7 @@
             <map to='#4d3e35'>
               <bucket>&quot;CoalPowerPlant&quot;</bucket>
             </map>
-            <map to='#518696'>
+            <map to='#4e79a7'>
               <bucket>&quot;WindOnshore&quot;</bucket>
             </map>
             <map to='#59504e'>
@@ -167,7 +168,7 @@
               <bucket>&quot;CoalMine&quot;</bucket>
             </map>
             <map to='#76b7b2'>
-              <bucket>&quot;DieselGenerator&quot;</bucket>
+              <bucket>&quot;HydroPower&quot;</bucket>
             </map>
             <map to='#7cb342'>
               <bucket>&quot;BiomassGenerator&quot;</bucket>
@@ -175,8 +176,14 @@
             <map to='#9b93c9'>
               <bucket>&quot;PHS&quot;</bucket>
             </map>
+            <map to='#9c755f'>
+              <bucket>&quot;DieselGenerator&quot;</bucket>
+            </map>
             <map to='#ac300e'>
               <bucket>&quot;GasPowerPlant&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Curtailment&quot;</bucket>
             </map>
             <map to='#d4a6c8'>
               <bucket>&quot;Battery&quot;</bucket>
@@ -190,14 +197,8 @@
             <map to='#e54213'>
               <bucket>&quot;GasExtractor&quot;</bucket>
             </map>
-            <map to='#edc948'>
-              <bucket>&quot;HydroPower&quot;</bucket>
-            </map>
             <map to='#f1ce63'>
               <bucket>&quot;ElectricHeater&quot;</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>&quot;Curtailment&quot;</bucket>
             </map>
             <map to='#ffeb3b'>
               <bucket>&quot;SolarPV&quot;</bucket>
@@ -247,6 +248,19 @@
           <filter class='categorical' column='[federated.05oclpd0di546711f7y661pm4vap].[none:Fuel:nk]'>
             <groupfilter function='member' level='[none:Fuel:nk]' member='&quot;Power&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
           </filter>
+          <manual-sort column='[federated.05oclpd0di546711f7y661pm4vap].[none:Technology:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Battery&quot;</bucket>
+              <bucket>&quot;Curtailment&quot;</bucket>
+              <bucket>&quot;Demand&quot;</bucket>
+              <bucket>&quot;DieselGenerator&quot;</bucket>
+              <bucket>&quot;DieselImports&quot;</bucket>
+              <bucket>&quot;ElectricHeater&quot;</bucket>
+              <bucket>&quot;HydroPower&quot;</bucket>
+              <bucket>&quot;SolarPV&quot;</bucket>
+              <bucket>&quot;WindOnshore&quot;</bucket>
+            </dictionary>
+          </manual-sort>
           <slices>
             <column>[federated.05oclpd0di546711f7y661pm4vap].[none:Fuel:nk]</column>
           </slices>
@@ -310,8 +324,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='14' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97916' id='13' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+            <zone h='100000' id='16' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='15' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
                 <zone fixed-size='280' h='97916' id='3' is-fixed='true' name='Blatt 1' w='88652' x='586' y='1042'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
