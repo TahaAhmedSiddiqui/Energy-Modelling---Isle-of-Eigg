@@ -359,7 +359,7 @@
     </dashboard>
   </dashboards>
   <windows source-height='30'>
-    <window class='worksheet' name='Blatt 1'>
+    <window class='worksheet' maximized='true' name='Blatt 1'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -387,7 +387,7 @@
       </cards>
       <simple-id uuid='{2ECDBB99-0F44-41B7-B42A-601F24F5D31E}' />
     </window>
-    <window class='dashboard' maximized='true' name='Dashboard 1'>
+    <window class='dashboard' name='Dashboard 1'>
       <viewpoints>
         <viewpoint name='Blatt 1'>
           <zoom type='entire-view' />
