@@ -1,3 +1,5 @@
 ﻿technology,fuel,value
-ElectricHeater,Power,1.1
 DieselGenerator,Diesel,1
+WoodBurner,FireWood,1
+ElectricStove,Power,1
+ElectricVehicle,Power,1

@@ -1,0 +1,7 @@
+﻿technology,value
+SolarPV,0.01
+WindOnshore,0.05
+ElectricHeater,0.01
+HydroPower,0.05
+DieselGenerator,0.05
+DieselImports,0.02

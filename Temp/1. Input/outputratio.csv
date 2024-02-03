@@ -1,0 +1,7 @@
+﻿technology,fuel,value
+SolarPV,Power,1
+WindOnshore,Power,1
+ElectricHeater,Heat,1
+DieselGenerator,Power,1
+HydroPower,Power,1
+DieselImports,Diesel,1
