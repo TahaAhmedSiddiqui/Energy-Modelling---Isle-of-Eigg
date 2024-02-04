@@ -1,6 +1,5 @@
 ﻿technology,value
 DieselGenerator,64
-SolarPV,9999999
-WindOnshore,9999999
+SolarPV,182
+WindOnshore,24
 HydroPower,112
-Tidal,9999999

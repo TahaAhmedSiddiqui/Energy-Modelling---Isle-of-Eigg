@@ -3,9 +3,8 @@ SolarPV,Power,1
 WindOnshore,Power,1
 DieselGenerator,Power,4
 HydroPower,Power,1
-Tidal,Power,1
 DieselImport,Diesel,1
 Forest,FireWood,1
 WoodBurner,Heat,2
-ElectricStove,Cooking,0.75
-ElectricVehicle,Mobility,0.8
+GasStove,Cooking,10.55
+ICEVehicle,Mobility,3
