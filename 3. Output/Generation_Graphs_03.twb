@@ -592,6 +592,94 @@
         </objects>
       </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
     </datasource>
+    <datasource caption='TotalProjectCapital' inline='true' name='federated.00704rz02kem5z1gvmsrn02adqsm' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='TotalProjectCapital' name='textscan.1x3haev0ctodqb1ak22rh0r4broi'>
+            <connection class='textscan' directory='C:/Users/haree/Documents/GitHub/Energy-Modelling---Isle-of-Eigg/3. Output' filename='TotalProjectCapital.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1x3haev0ctodqb1ak22rh0r4broi' name='TotalProjectCapital.csv' table='[TotalProjectCapital#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='string' name='Technology' ordinal='0' />
+            <column datatype='real' name='Value' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1x3haev0ctodqb1ak22rh0r4broi' name='TotalProjectCapital.csv' table='[TotalProjectCapital#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='string' name='Technology' ordinal='0' />
+            <column datatype='real' name='Value' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[TotalProjectCapital.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Technology</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Technology]</local-name>
+            <parent-name>[TotalProjectCapital.csv]</parent-name>
+            <remote-alias>Technology</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TotalProjectCapital.csv_4958834FE652421BA239A0061D944B2F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Value]</local-name>
+            <parent-name>[TotalProjectCapital.csv]</parent-name>
+            <remote-alias>Value</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TotalProjectCapital.csv_4958834FE652421BA239A0061D944B2F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='TotalProjectCapital.csv' datatype='table' name='[__tableau_internal_object_id__].[TotalProjectCapital.csv_4958834FE652421BA239A0061D944B2F]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Germany&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='TotalProjectCapital.csv' id='TotalProjectCapital.csv_4958834FE652421BA239A0061D944B2F'>
+            <properties context=''>
+              <relation connection='textscan.1x3haev0ctodqb1ak22rh0r4broi' name='TotalProjectCapital.csv' table='[TotalProjectCapital#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='string' name='Technology' ordinal='0' />
+                  <column datatype='real' name='Value' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
   </datasources>
   <worksheets>
     <worksheet name='Blatt 1'>
@@ -726,6 +814,37 @@
       </table>
       <simple-id uuid='{E9D3FC6B-3200-485A-85F4-2A7373267002}' />
     </worksheet>
+    <worksheet name='TotalProjectCapital'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='TotalProjectCapital' name='federated.00704rz02kem5z1gvmsrn02adqsm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00704rz02kem5z1gvmsrn02adqsm'>
+            <column datatype='string' name='[Technology]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Value]' role='measure' type='quantitative' />
+            <column-instance column='[Technology]' derivation='None' name='[none:Technology:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Value]' derivation='Sum' name='[sum:Value:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.00704rz02kem5z1gvmsrn02adqsm].[none:Technology:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.00704rz02kem5z1gvmsrn02adqsm].[sum:Value:qk]</rows>
+        <cols>[federated.00704rz02kem5z1gvmsrn02adqsm].[none:Technology:nk]</cols>
+      </table>
+      <simple-id uuid='{66E7B2E6-1A25-47C9-AFF1-6D9BB8872C9B}' />
+    </worksheet>
     <worksheet name='TotalStorageCapacity'>
       <table>
         <view>
@@ -804,8 +923,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='30' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97916' id='29' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+            <zone h='100000' id='32' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='31' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
                 <zone fixed-size='280' h='97916' id='3' is-fixed='true' name='Blatt 1' w='88652' x='586' y='1042'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -838,7 +957,7 @@
       <simple-id uuid='{7A5280A8-85AE-4D43-9A65-59C0BFC38905}' />
     </dashboard>
   </dashboards>
-  <windows saved-dpi-scale-factor='1.25' source-height='115'>
+  <windows saved-dpi-scale-factor='1.25' source-height='141'>
     <window class='worksheet' name='Blatt 1'>
       <cards>
         <edge name='left'>
@@ -978,7 +1097,7 @@
       </viewpoint>
       <simple-id uuid='{1F78E33D-9684-47BF-89F8-598DD5F2D611}' />
     </window>
-    <window class='worksheet' maximized='true' name='StorageLevel'>
+    <window class='worksheet' name='StorageLevel'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -1013,6 +1132,41 @@
         </highlight>
       </viewpoint>
       <simple-id uuid='{4B06B308-BFFC-4C2B-8C4B-11B702EC6E87}' />
+    </window>
+    <window class='worksheet' maximized='true' name='TotalProjectCapital'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.00704rz02kem5z1gvmsrn02adqsm].[none:Technology:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.00704rz02kem5z1gvmsrn02adqsm].[none:Technology:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0CF4F61C-B39F-4F0C-9309-65C41AEB51B8}' />
     </window>
   </windows>
   <thumbnails>
@@ -1802,6 +1956,69 @@
       6l2IuSTu3/8AhVwKBTGPtY0IlhfnsbETN1tNU2EGcKlRMfXBPaxv7+G7r30H/b1+fPfVbyCZ
       SeD79x7g7vfuoa1FvxfmMmD5RfEM/Tg8rfjw1etYdQDBjhZMTj3G4PgtzE7Pw+fzoas7iBaP
       NaM0LwrmBmU0NawLxGhq/j+uqPxXuEvrrwAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='TotalProjectCapital' width='192'>
+      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
+      rkJggg==
     </thumbnail>
     <thumbnail height='192' name='TotalStorageCapacity' width='192'>
       iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
