@@ -5,7 +5,7 @@ WindOnshore,2500
 SolarPV,1100
 Tidal,3600
 Forest,1
-DieselImports,1
+DieselImport,1
 WoodBurner,1
 ElectricStove,200
 ElectricVehicle,450
