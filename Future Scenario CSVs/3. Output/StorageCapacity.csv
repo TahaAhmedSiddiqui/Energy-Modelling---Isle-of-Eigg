@@ -23,7 +23,7 @@ Year,Storage,Fuel,Type,Value
 2030,LeadAcidBattery,Cooking,NewCapacity,0.0
 2030,LeadAcidBattery,Diesel,NewCapacity,0.0
 2030,LeadAcidBattery,FireWood,NewCapacity,0.0
-2030,LiIonBattery,Power,NewCapacity,541.294658575187
+2030,LiIonBattery,Power,NewCapacity,232.5967464571401
 2030,LiIonBattery,Heat,NewCapacity,0.0
 2030,LiIonBattery,Mobility,NewCapacity,0.0
 2030,LiIonBattery,Cooking,NewCapacity,0.0
@@ -41,7 +41,7 @@ Year,Storage,Fuel,Type,Value
 2035,LeadAcidBattery,Cooking,NewCapacity,0.0
 2035,LeadAcidBattery,Diesel,NewCapacity,0.0
 2035,LeadAcidBattery,FireWood,NewCapacity,0.0
-2035,LiIonBattery,Power,NewCapacity,19.063449455499494
+2035,LiIonBattery,Power,NewCapacity,116.10101406155837
 2035,LiIonBattery,Heat,NewCapacity,0.0
 2035,LiIonBattery,Mobility,NewCapacity,0.0
 2035,LiIonBattery,Cooking,NewCapacity,0.0
@@ -59,7 +59,7 @@ Year,Storage,Fuel,Type,Value
 2040,LeadAcidBattery,Cooking,NewCapacity,0.0
 2040,LeadAcidBattery,Diesel,NewCapacity,0.0
 2040,LeadAcidBattery,FireWood,NewCapacity,0.0
-2040,LiIonBattery,Power,NewCapacity,69.91006301705238
+2040,LiIonBattery,Power,NewCapacity,281.5704105290404
 2040,LiIonBattery,Heat,NewCapacity,0.0
 2040,LiIonBattery,Mobility,NewCapacity,0.0
 2040,LiIonBattery,Cooking,NewCapacity,0.0
@@ -95,7 +95,7 @@ Year,Storage,Fuel,Type,Value
 2030,LeadAcidBattery,Cooking,TotalCapacity,0.0
 2030,LeadAcidBattery,Diesel,TotalCapacity,0.0
 2030,LeadAcidBattery,FireWood,TotalCapacity,0.0
-2030,LiIonBattery,Power,TotalCapacity,541.294658575187
+2030,LiIonBattery,Power,TotalCapacity,232.5967464571401
 2030,LiIonBattery,Heat,TotalCapacity,0.0
 2030,LiIonBattery,Mobility,TotalCapacity,0.0
 2030,LiIonBattery,Cooking,TotalCapacity,0.0
@@ -113,7 +113,7 @@ Year,Storage,Fuel,Type,Value
 2035,LeadAcidBattery,Cooking,TotalCapacity,0.0
 2035,LeadAcidBattery,Diesel,TotalCapacity,0.0
 2035,LeadAcidBattery,FireWood,TotalCapacity,0.0
-2035,LiIonBattery,Power,TotalCapacity,560.3581080306865
+2035,LiIonBattery,Power,TotalCapacity,348.6977605186985
 2035,LiIonBattery,Heat,TotalCapacity,0.0
 2035,LiIonBattery,Mobility,TotalCapacity,0.0
 2035,LiIonBattery,Cooking,TotalCapacity,0.0
