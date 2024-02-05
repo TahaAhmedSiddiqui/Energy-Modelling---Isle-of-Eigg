@@ -3,7 +3,7 @@ DieselGenerator,187.5
 HydroPower,3270
 WindOnshore,2500
 SolarPV,1100
-Tidal,3600
+Tidal,5000
 Forest,1
 DieselImport,1
 WoodBurner,1

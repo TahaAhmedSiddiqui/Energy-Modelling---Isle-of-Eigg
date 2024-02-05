@@ -23,7 +23,7 @@ Year,Storage,Fuel,Type,Value
 2030,LeadAcidBattery,Cooking,NewCapacity,0.0
 2030,LeadAcidBattery,Diesel,NewCapacity,0.0
 2030,LeadAcidBattery,FireWood,NewCapacity,0.0
-2030,LiIonBattery,Power,NewCapacity,232.59674645713994
+2030,LiIonBattery,Power,NewCapacity,232.59674645713977
 2030,LiIonBattery,Heat,NewCapacity,0.0
 2030,LiIonBattery,Mobility,NewCapacity,0.0
 2030,LiIonBattery,Cooking,NewCapacity,0.0
@@ -41,7 +41,7 @@ Year,Storage,Fuel,Type,Value
 2035,LeadAcidBattery,Cooking,NewCapacity,0.0
 2035,LeadAcidBattery,Diesel,NewCapacity,0.0
 2035,LeadAcidBattery,FireWood,NewCapacity,0.0
-2035,LiIonBattery,Power,NewCapacity,141.11627309208757
+2035,LiIonBattery,Power,NewCapacity,140.93368244823546
 2035,LiIonBattery,Heat,NewCapacity,0.0
 2035,LiIonBattery,Mobility,NewCapacity,0.0
 2035,LiIonBattery,Cooking,NewCapacity,0.0
@@ -59,7 +59,7 @@ Year,Storage,Fuel,Type,Value
 2040,LeadAcidBattery,Cooking,NewCapacity,0.0
 2040,LeadAcidBattery,Diesel,NewCapacity,0.0
 2040,LeadAcidBattery,FireWood,NewCapacity,0.0
-2040,LiIonBattery,Power,NewCapacity,257.08942857364593
+2040,LiIonBattery,Power,NewCapacity,260.8323489525183
 2040,LiIonBattery,Heat,NewCapacity,0.0
 2040,LiIonBattery,Mobility,NewCapacity,0.0
 2040,LiIonBattery,Cooking,NewCapacity,0.0
@@ -95,7 +95,7 @@ Year,Storage,Fuel,Type,Value
 2030,LeadAcidBattery,Cooking,TotalCapacity,0.0
 2030,LeadAcidBattery,Diesel,TotalCapacity,0.0
 2030,LeadAcidBattery,FireWood,TotalCapacity,0.0
-2030,LiIonBattery,Power,TotalCapacity,232.59674645713994
+2030,LiIonBattery,Power,TotalCapacity,232.59674645713977
 2030,LiIonBattery,Heat,TotalCapacity,0.0
 2030,LiIonBattery,Mobility,TotalCapacity,0.0
 2030,LiIonBattery,Cooking,TotalCapacity,0.0
@@ -113,7 +113,7 @@ Year,Storage,Fuel,Type,Value
 2035,LeadAcidBattery,Cooking,TotalCapacity,0.0
 2035,LeadAcidBattery,Diesel,TotalCapacity,0.0
 2035,LeadAcidBattery,FireWood,TotalCapacity,0.0
-2035,LiIonBattery,Power,TotalCapacity,373.7130195492275
+2035,LiIonBattery,Power,TotalCapacity,373.53042890537523
 2035,LiIonBattery,Heat,TotalCapacity,0.0
 2035,LiIonBattery,Mobility,TotalCapacity,0.0
 2035,LiIonBattery,Cooking,TotalCapacity,0.0
@@ -131,7 +131,7 @@ Year,Storage,Fuel,Type,Value
 2040,LeadAcidBattery,Cooking,TotalCapacity,0.0
 2040,LeadAcidBattery,Diesel,TotalCapacity,0.0
 2040,LeadAcidBattery,FireWood,TotalCapacity,0.0
-2040,LiIonBattery,Power,TotalCapacity,630.8024481228734
+2040,LiIonBattery,Power,TotalCapacity,634.3627778578935
 2040,LiIonBattery,Heat,TotalCapacity,0.0
 2040,LiIonBattery,Mobility,TotalCapacity,0.0
 2040,LiIonBattery,Cooking,TotalCapacity,0.0
