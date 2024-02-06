@@ -1,0 +1,5 @@
+﻿technology,fuel,value
+SolarPV,Power,1
+WindOnshore,Power,1
+DieselGenerator,Power,4
+HydroPower,Power,1
