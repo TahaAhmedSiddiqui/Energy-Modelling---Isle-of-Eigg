@@ -1,0 +1,11 @@
+﻿technology,value
+SolarPV,25
+WindOnshore,25
+HydroPower,50
+DieselGenerator,30
+Tidal,25
+DieselImport,50
+Forest,50
+ElectricStove,50
+ElectricVehicle,50
+WoodBurner,50
