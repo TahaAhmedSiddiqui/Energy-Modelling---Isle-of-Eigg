@@ -3,3 +3,4 @@ DieselGenerator,Diesel,1
 WoodBurner,FireWood,1
 ElectricStove,Power,1
 ElectricVehicle,Power,1
+ElectricHeatPump,Power,1

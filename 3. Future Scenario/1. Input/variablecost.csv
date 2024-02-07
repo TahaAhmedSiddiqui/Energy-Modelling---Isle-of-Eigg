@@ -7,5 +7,6 @@ Tidal,0.012
 DieselImport,0.001
 Forest,0.001
 ElectricStove,0.001
-ElectricVehicle,0.1
+ElectricVehicle,0.001
 WoodBurner,0.001
+ElectricHeatPump,0.001

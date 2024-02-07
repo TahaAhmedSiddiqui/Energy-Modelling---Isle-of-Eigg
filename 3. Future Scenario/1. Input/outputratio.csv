@@ -9,3 +9,4 @@ Forest,FireWood,1
 WoodBurner,Heat,2
 ElectricStove,Cooking,0.75
 ElectricVehicle,Mobility,0.8
+ElectricHeatPump,Heat,0.95
