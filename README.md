@@ -1,11 +1,11 @@
 
 # Energy Modelling - Isle of Eigg
  
- Repository for the Short and Long Term Energy Models for the **Isle of Eigg, Scotland**  
+ Repository for the Short and Long Term Energy Models for the **Isle of Eigg, Scotland**, as part of the International Class 2024 from Europa Universität Flensburg, Germany  
  
  Co-developed by **Taha Ahmed Siddiqui** <tahaahmedsiddiqui/@outlook.com> and **Hareem Taha** <hareem.nadeem10/@gmail.com>
  
- An adaption from OSEMOSYS GENESYS-MOD
+ An adaptation of OSEMOSYS: GENESYS-MOD - Löffler, K.; Hainsch, K.; Burandt, T.; Oei, P.-Y.; Kemfert, C.; Von Hirschhausen, C. Designing a Model for the Global Energy System—GENeSYS-MOD: An Application of the Open-Source Energy Modeling System (OSeMOSYS). Energies 2017, 10, 1468. <https://doi.org/10.3390/en10101468> and Git Repository: <https://git.tu-berlin.de/genesysmod/genesys-mod-public> 
 
  Licensed under MIT License
 
