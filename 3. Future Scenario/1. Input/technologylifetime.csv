@@ -1,8 +1,8 @@
 ﻿technology,value
 SolarPV,25
 WindOnshore,25
-HydroPower,50
-DieselGenerator,30
+HydroPower,60
+DieselGenerator,25
 Tidal,25
 DieselImport,50
 Forest,50
