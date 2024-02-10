@@ -1,10 +1,7 @@
 ﻿year,storage,value
 2030,LeadAcidBattery,999999
-2030,LiIonBattery,999999
-2030,LiFePO4Battery,999999
+2030,LFPBattery,999999
 2035,LeadAcidBattery,999999
-2035,LiIonBattery,999999
-2035,LiFePO4Battery,999999
+2035,LFPBattery,999999
 2040,LeadAcidBattery,999999
-2040,LiIonBattery,999999
-2040,LiFePO4Battery,999999
+2040,LFPBattery,999999
