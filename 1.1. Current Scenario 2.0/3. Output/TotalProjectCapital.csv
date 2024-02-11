@@ -3,5 +3,5 @@ SolarPV,
 WindOnshore,
 HydroPower,
 DieselGenerator,
-DieselImports,
+DieselImport,
 LeadAcidBattery,0.0

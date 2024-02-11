@@ -3,4 +3,9 @@ SolarPV
 WindOnshore
 HydroPower
 DieselGenerator
-DieselImports
+DieselImport
+Forest
+GasImport
+GasStove
+ICEVehicle
+WoodBurner
