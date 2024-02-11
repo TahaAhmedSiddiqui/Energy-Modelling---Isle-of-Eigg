@@ -2,11 +2,11 @@
 SolarPV
 WindOnshore
 HydroPower
-DieselGenerator
 Tidal
+DieselGenerator
 DieselImport
 Forest
-ElectricStove
-ElectricVehicle
+GasImport
+GasStove
+ICEVehicle
 WoodBurner
-ElectricHeatPump

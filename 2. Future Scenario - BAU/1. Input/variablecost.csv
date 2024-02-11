@@ -2,11 +2,11 @@
 SolarPV,0.008
 WindOnshore,0.007
 HydroPower,0.015
-DieselGenerator,0.8
 Tidal,0.06
+DieselGenerator,0.8
 DieselImport,0
 Forest,0
-ElectricStove,0
-ElectricVehicle,0
+GasStove,0
+ICEVehicle,0
 WoodBurner,0
-ElectricHeatPump,0
+GasImport,0
