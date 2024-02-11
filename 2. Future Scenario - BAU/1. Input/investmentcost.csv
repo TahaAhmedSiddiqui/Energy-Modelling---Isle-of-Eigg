@@ -4,9 +4,8 @@ HydroPower,5629
 WindOnshore,2700
 SolarPV,510
 Tidal,3600
-Forest,0
 DieselImport,0
+GasImport,0
 WoodBurner,0
-ElectricStove,0
-ElectricVehicle,0
-ElectricHeatPump,0
+GasStove,0
+ICEVehicle,0
