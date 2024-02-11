@@ -2,7 +2,7 @@ Year,Technology,Value
 2030,SolarPV,0.0
 2030,WindOnshore,0.0
 2030,HydroPower,0.0
-2030,DieselGenerator,1217.9944862870761
+2030,DieselGenerator,103.61732882691197
 2030,Tidal,0.0
 2030,DieselImport,0.0
 2030,Forest,0.0
@@ -13,7 +13,7 @@ Year,Technology,Value
 2035,SolarPV,0.0
 2035,WindOnshore,0.0
 2035,HydroPower,0.0
-2035,DieselGenerator,1457.3265781093105
+2035,DieselGenerator,564.0014397261643
 2035,Tidal,0.0
 2035,DieselImport,0.0
 2035,Forest,0.0
