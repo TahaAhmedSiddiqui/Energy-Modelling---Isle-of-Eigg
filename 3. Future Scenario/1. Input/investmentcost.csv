@@ -1,9 +1,9 @@
 ﻿technology,value
 DieselGenerator,187.5
-HydroPower,3270
-WindOnshore,2500
-SolarPV,1100
-Tidal,5000
+HydroPower,5629
+WindOnshore,2700
+SolarPV,510
+Tidal,3600
 Forest,0
 DieselImport,0
 WoodBurner,0
