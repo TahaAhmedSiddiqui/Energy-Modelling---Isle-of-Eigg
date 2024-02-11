@@ -2,10 +2,10 @@ Technology,Value
 SolarPV,0.0
 WindOnshore,0.0
 HydroPower,0.0
-DieselGenerator,8189.020014839834
+DieselGenerator,6138.60924872258
 DieselImport,0.0
 Forest,0.0
 GasImport,0.0
-GasStove,250354.4939914934
-ICEVehicle,314388.116856121
-WoodBurner,851343.4669490384
+GasStove,250353.0852467205
+ICEVehicle,314397.84653964796
+WoodBurner,671844.5779995918

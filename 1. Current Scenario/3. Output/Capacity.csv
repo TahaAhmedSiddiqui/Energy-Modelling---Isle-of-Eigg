@@ -3,9 +3,9 @@ SolarPV,0.0
 WindOnshore,0.0
 HydroPower,0.0
 DieselGenerator,0.0
-DieselImport,109.14320223089855
+DieselImport,999999.0
 Forest,999999.0
-GasImport,35.41924428
+GasImport,999999.0
 GasStove,999999.0
 ICEVehicle,999999.0
 WoodBurner,999999.0
