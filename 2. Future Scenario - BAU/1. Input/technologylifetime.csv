@@ -5,8 +5,8 @@ HydroPower,60
 DieselGenerator,25
 Tidal,25
 DieselImport,50
+GasImport,50
 Forest,50
-ElectricStove,50
-ElectricVehicle,50
+GasStove,50
+ICEVehicle,50
 WoodBurner,50
-ElectricHeatPump,50
