@@ -1,10 +1,7 @@
 ﻿technology,value
-DieselGenerator,1E+13
-HydroPower,1E+13
-WindOnshore,1E+13
-SolarPV,1E+13
-Forest,0
-DieselImport,0
-WoodBurner,0
-GasStove,0
-ICEVehicle,0
+DieselGenerator,187.5
+HydroPower,3270
+WindOnshore,2500
+SolarPV,1100
+DieselImport,1
+GasImport,1

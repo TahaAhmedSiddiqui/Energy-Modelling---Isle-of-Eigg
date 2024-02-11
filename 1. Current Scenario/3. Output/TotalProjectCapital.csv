@@ -1,7 +1,7 @@
 Technology,Value
-SolarPV,0.0
-WindOnshore,0.0
-HydroPower,0.0
-DieselGenerator,0.0
-DieselImport,0.0
+SolarPV,
+WindOnshore,
+HydroPower,
+DieselGenerator,
+DieselImport,
 LeadAcidBattery,0.0
