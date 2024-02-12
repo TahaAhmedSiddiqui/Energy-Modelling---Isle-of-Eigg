@@ -23,7 +23,7 @@ Year,Storage,Fuel,Type,Value
 2035,LFPBattery,Cooking,NewCapacity,0.0
 2035,LFPBattery,Diesel,NewCapacity,0.0
 2035,LFPBattery,FireWood,NewCapacity,0.0
-2040,LeadAcidBattery,Power,NewCapacity,2.2737367544323206e-12
+2040,LeadAcidBattery,Power,NewCapacity,0.0
 2040,LeadAcidBattery,Heat,NewCapacity,0.0
 2040,LeadAcidBattery,Mobility,NewCapacity,0.0
 2040,LeadAcidBattery,Cooking,NewCapacity,0.0
@@ -59,7 +59,7 @@ Year,Storage,Fuel,Type,Value
 2035,LFPBattery,Cooking,TotalCapacity,0.0
 2035,LFPBattery,Diesel,TotalCapacity,0.0
 2035,LFPBattery,FireWood,TotalCapacity,0.0
-2040,LeadAcidBattery,Power,TotalCapacity,0.0
+2040,LeadAcidBattery,Power,TotalCapacity,516.5599999999977
 2040,LeadAcidBattery,Heat,TotalCapacity,0.0
 2040,LeadAcidBattery,Mobility,TotalCapacity,0.0
 2040,LeadAcidBattery,Cooking,TotalCapacity,0.0
