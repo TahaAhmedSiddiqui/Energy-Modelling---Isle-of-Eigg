@@ -7,7 +7,7 @@ Year,Technology,Value
 2026,DieselImport,0.0
 2026,Forest,0.0
 2026,ElectricStove,260.0
-2026,ElectricVehicle,278.0
+2026,ElectricVehicle,280.0
 2026,WoodBurner,542.1077765920011
 2026,ElectricHeatPump,0.0
 2028,SolarPV,0.0
@@ -17,8 +17,8 @@ Year,Technology,Value
 2028,Tidal,0.0
 2028,DieselImport,0.0
 2028,Forest,0.0
-2028,ElectricStove,132.0
-2028,ElectricVehicle,159.60000000000002
+2028,ElectricStove,120.0
+2028,ElectricVehicle,200.0
 2028,WoodBurner,298.1592771256006
 2028,ElectricHeatPump,0.0
 2030,SolarPV,0.0
