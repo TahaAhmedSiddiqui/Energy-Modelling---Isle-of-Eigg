@@ -1,0 +1,1708 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20231.23.0511.1508                               -->
+<workbook original-version='18.1' source-build='2023.1.2 (20231.23.0511.1508)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <_.fcp.MarkAnimation.true...style-rule element='animation'>
+      <format attr='animation-on' value='ao-off' />
+    </_.fcp.MarkAnimation.true...style-rule>
+  </style>
+  <datasources>
+    <datasource caption='Curtailment' inline='true' name='federated.1vixc6o0fs74oc16ktojp08af7b6' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Curtailment' name='textscan.1lq2ttd1an8yg113sen7m18hq34m'>
+            <connection class='textscan' directory='C:/Users/tahaa/Documents/GitHub/Energy-Modelling---Isle-of-Eigg/3. Future Scenario - Electrified/3. Output' filename='Curtailment.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1lq2ttd1an8yg113sen7m18hq34m' name='Curtailment.csv' table='[Curtailment#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='integer' name='Hour' ordinal='1' />
+            <column datatype='string' name='Fuel' ordinal='2' />
+            <column datatype='real' name='Value' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1lq2ttd1an8yg113sen7m18hq34m' name='Curtailment.csv' table='[Curtailment#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='integer' name='Hour' ordinal='1' />
+            <column datatype='string' name='Fuel' ordinal='2' />
+            <column datatype='real' name='Value' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Curtailment.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Curtailment.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Curtailment.csv_A7606D5BFED6441F9F962BEA04F03E83]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hour</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hour]</local-name>
+            <parent-name>[Curtailment.csv]</parent-name>
+            <remote-alias>Hour</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Curtailment.csv_A7606D5BFED6441F9F962BEA04F03E83]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fuel</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Fuel]</local-name>
+            <parent-name>[Curtailment.csv]</parent-name>
+            <remote-alias>Fuel</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Curtailment.csv_A7606D5BFED6441F9F962BEA04F03E83]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Value]</local-name>
+            <parent-name>[Curtailment.csv]</parent-name>
+            <remote-alias>Value</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Curtailment.csv_A7606D5BFED6441F9F962BEA04F03E83]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Fuel]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Hour]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Curtailment.csv' datatype='table' name='[__tableau_internal_object_id__].[Curtailment.csv_A7606D5BFED6441F9F962BEA04F03E83]' role='measure' type='quantitative' />
+      <column-instance column='[Fuel]' derivation='None' name='[none:Fuel:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Hour]' derivation='None' name='[none:Hour:qk]' pivot='key' type='quantitative' />
+      <group hidden='true' name='[Inclusions (Fuel,Hour)]' name-style='unqualified' user:auto-column='include'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Fuel:nk]' />
+          <groupfilter function='level-members' level='[none:Hour:qk]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Fuel:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;Power&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Germany&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Curtailment.csv' id='Curtailment.csv_A7606D5BFED6441F9F962BEA04F03E83'>
+            <properties context=''>
+              <relation connection='textscan.1lq2ttd1an8yg113sen7m18hq34m' name='Curtailment.csv' table='[Curtailment#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='integer' name='Year' ordinal='0' />
+                  <column datatype='integer' name='Hour' ordinal='1' />
+                  <column datatype='string' name='Fuel' ordinal='2' />
+                  <column datatype='real' name='Value' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='StorageLevel' inline='true' name='federated.0r50v4l1qsz0v21bhv82p1qugnhw' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='StorageLevel' name='textscan.0x9m82l1shc1pu1f44ofk11t3yxp'>
+            <connection class='textscan' directory='C:/Users/tahaa/Documents/GitHub/Energy-Modelling---Isle-of-Eigg/3. Future Scenario - Electrified/3. Output' filename='StorageLevel.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0x9m82l1shc1pu1f44ofk11t3yxp' name='StorageLevel.csv' table='[StorageLevel#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='integer' name='Hour' ordinal='1' />
+            <column datatype='string' name='Storage' ordinal='2' />
+            <column datatype='string' name='Fuel' ordinal='3' />
+            <column datatype='real' name='Value' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0x9m82l1shc1pu1f44ofk11t3yxp' name='StorageLevel.csv' table='[StorageLevel#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='integer' name='Hour' ordinal='1' />
+            <column datatype='string' name='Storage' ordinal='2' />
+            <column datatype='string' name='Fuel' ordinal='3' />
+            <column datatype='real' name='Value' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[StorageLevel.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[StorageLevel.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[StorageLevel.csv_EAEDD19FEC61486F94A0E12E1C2D81DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hour</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hour]</local-name>
+            <parent-name>[StorageLevel.csv]</parent-name>
+            <remote-alias>Hour</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[StorageLevel.csv_EAEDD19FEC61486F94A0E12E1C2D81DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Storage</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Storage]</local-name>
+            <parent-name>[StorageLevel.csv]</parent-name>
+            <remote-alias>Storage</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[StorageLevel.csv_EAEDD19FEC61486F94A0E12E1C2D81DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fuel</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Fuel]</local-name>
+            <parent-name>[StorageLevel.csv]</parent-name>
+            <remote-alias>Fuel</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[StorageLevel.csv_EAEDD19FEC61486F94A0E12E1C2D81DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Value]</local-name>
+            <parent-name>[StorageLevel.csv]</parent-name>
+            <remote-alias>Value</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[StorageLevel.csv_EAEDD19FEC61486F94A0E12E1C2D81DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' datatype='integer' name='[Hour]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Storage]' role='dimension' type='nominal' />
+      <column aggregation='Sum' datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='StorageLevel.csv' datatype='table' name='[__tableau_internal_object_id__].[StorageLevel.csv_EAEDD19FEC61486F94A0E12E1C2D81DF]' role='measure' type='quantitative' />
+      <column-instance column='[Storage]' derivation='None' name='[none:Storage:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Storage:nk]' palette='nuriel_stone_10_0' type='palette'>
+            <map to='#31a1b3'>
+              <bucket>&quot;PHS&quot;</bucket>
+            </map>
+            <map to='#6fb899'>
+              <bucket>&quot;H2Tank&quot;</bucket>
+            </map>
+            <map to='#8175aa'>
+              <bucket>&quot;Battery&quot;</bucket>
+            </map>
+            <map to='#94d0c0'>
+              <bucket>&quot;LiIonBattery&quot;</bucket>
+            </map>
+            <map to='#a39fc9'>
+              <bucket>&quot;LiFePO4Battery&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;LeadAcidBattery&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;LFPBattery&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Germany&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='StorageLevel.csv' id='StorageLevel.csv_EAEDD19FEC61486F94A0E12E1C2D81DF'>
+            <properties context=''>
+              <relation connection='textscan.0x9m82l1shc1pu1f44ofk11t3yxp' name='StorageLevel.csv' table='[StorageLevel#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Year' ordinal='0' />
+                  <column datatype='integer' name='Hour' ordinal='1' />
+                  <column datatype='string' name='Storage' ordinal='2' />
+                  <column datatype='string' name='Fuel' ordinal='3' />
+                  <column datatype='real' name='Value' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='ProductionByTechnology' inline='true' name='federated.05oclpd0di546711f7y661pm4vap' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ProductionByTechnology' name='textscan.0lr2m3a0xx1zp311yv0hy1d5spbv'>
+            <connection class='textscan' directory='C:/Users/tahaa/Documents/GitHub/Energy-Modelling---Isle-of-Eigg/3. Future Scenario - Electrified/3. Output' filename='EnergyBalance.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0lr2m3a0xx1zp311yv0hy1d5spbv' name='EnergyBalance.csv' table='[EnergyBalance#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='Year' ordinal='0' />
+            <column datatype='integer' name='Hour' ordinal='1' />
+            <column datatype='string' name='Technology' ordinal='2' />
+            <column datatype='string' name='Fuel' ordinal='3' />
+            <column datatype='real' name='Value' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0lr2m3a0xx1zp311yv0hy1d5spbv' name='EnergyBalance.csv' table='[EnergyBalance#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='Year' ordinal='0' />
+            <column datatype='integer' name='Hour' ordinal='1' />
+            <column datatype='string' name='Technology' ordinal='2' />
+            <column datatype='string' name='Fuel' ordinal='3' />
+            <column datatype='real' name='Value' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[EnergyBalance.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[EnergyBalance.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EnergyBalance.csv_3B77024786E0446DAC63FD0DEA418901]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hour</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hour]</local-name>
+            <parent-name>[EnergyBalance.csv]</parent-name>
+            <remote-alias>Hour</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EnergyBalance.csv_3B77024786E0446DAC63FD0DEA418901]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Technology</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Technology]</local-name>
+            <parent-name>[EnergyBalance.csv]</parent-name>
+            <remote-alias>Technology</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EnergyBalance.csv_3B77024786E0446DAC63FD0DEA418901]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fuel</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Fuel]</local-name>
+            <parent-name>[EnergyBalance.csv]</parent-name>
+            <remote-alias>Fuel</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EnergyBalance.csv_3B77024786E0446DAC63FD0DEA418901]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Value]</local-name>
+            <parent-name>[EnergyBalance.csv]</parent-name>
+            <remote-alias>Value</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EnergyBalance.csv_3B77024786E0446DAC63FD0DEA418901]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Fuel1' datatype='string' name='[Fuel]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Hour1' datatype='integer' name='[Hour]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Technology1' datatype='string' name='[Technology]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;Curtailment&quot;' value='Surplus (Potential)' />
+        </aliases>
+      </column>
+      <column aggregation='Sum' datatype='real' name='[Year]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='EnergyBalance.csv' datatype='table' name='[__tableau_internal_object_id__].[EnergyBalance.csv_3B77024786E0446DAC63FD0DEA418901]' role='measure' type='quantitative' />
+      <column-instance column='[Technology]' derivation='None' name='[none:Technology:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+      <group hidden='true' name='[Inclusions (Technology1,Year)]' name-style='unqualified' user:auto-column='include'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Technology:nk]' />
+          <groupfilter function='level-members' level='[none:Year:ok]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Technology:nk]' type='palette'>
+            <map to='#215968'>
+              <bucket>&quot;WindOffshore&quot;</bucket>
+            </map>
+            <map to='#26c6da'>
+              <bucket>&quot;H2Car&quot;</bucket>
+            </map>
+            <map to='#26c6da'>
+              <bucket>&quot;Power2Gas&quot;</bucket>
+            </map>
+            <map to='#298690'>
+              <bucket>&quot;H2Tank&quot;</bucket>
+            </map>
+            <map to='#316a00'>
+              <bucket>&quot;BECCS&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Forest&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Tidal&quot;</bucket>
+            </map>
+            <map to='#4d3e35'>
+              <bucket>&quot;CoalPowerPlant&quot;</bucket>
+            </map>
+            <map to='#518696'>
+              <bucket>&quot;WindOnshore&quot;</bucket>
+            </map>
+            <map to='#59504e'>
+              <bucket>&quot;Demand&quot;</bucket>
+            </map>
+            <map to='#711f09'>
+              <bucket>&quot;LPGCar&quot;</bucket>
+            </map>
+            <map to='#754937'>
+              <bucket>&quot;CoalCHPPlant&quot;</bucket>
+            </map>
+            <map to='#754937'>
+              <bucket>&quot;CoalMine&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;LiIonBattery&quot;</bucket>
+            </map>
+            <map to='#7cb342'>
+              <bucket>&quot;BiomassGenerator&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;DieselImport&quot;</bucket>
+            </map>
+            <map to='#9b93c9'>
+              <bucket>&quot;PHS&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;DieselGenerator&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;HydroPower&quot;</bucket>
+            </map>
+            <map to='#ac300e'>
+              <bucket>&quot;GasPowerPlant&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;ElectricStove&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Export&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Import&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;WoodBurner&quot;</bucket>
+            </map>
+            <map to='#d3d3d3'>
+              <bucket>&quot;Curtailment&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Battery&quot;</bucket>
+            </map>
+            <map to='#dce775'>
+              <bucket>&quot;BEV&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;LeadAcidBattery&quot;</bucket>
+            </map>
+            <map to='#e54213'>
+              <bucket>&quot;GasCHPPlant&quot;</bucket>
+            </map>
+            <map to='#e54213'>
+              <bucket>&quot;GasExtractor&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;ElectricHeater&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;ElectricVehicle&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;LFPBattery&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;ElectricHeatPump&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;LiFePO4Battery&quot;</bucket>
+            </map>
+            <map to='#ffeb3b'>
+              <bucket>&quot;SolarPV&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Germany&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='EnergyBalance.csv' id='EnergyBalance.csv_3B77024786E0446DAC63FD0DEA418901'>
+            <properties context=''>
+              <relation connection='textscan.0lr2m3a0xx1zp311yv0hy1d5spbv' name='EnergyBalance.csv' table='[EnergyBalance#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='real' name='Year' ordinal='0' />
+                  <column datatype='integer' name='Hour' ordinal='1' />
+                  <column datatype='string' name='Technology' ordinal='2' />
+                  <column datatype='string' name='Fuel' ordinal='3' />
+                  <column datatype='real' name='Value' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='AnnualGeneration&amp;Use'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Annual Power Generation</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ProductionByTechnology' name='federated.05oclpd0di546711f7y661pm4vap' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05oclpd0di546711f7y661pm4vap'>
+            <column caption='Fuel1' datatype='string' name='[Fuel]' role='dimension' type='nominal' />
+            <column caption='Technology1' datatype='string' name='[Technology]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Curtailment&quot;' value='Surplus (Potential)' />
+              </aliases>
+            </column>
+            <column datatype='real' name='[Value]' role='measure' type='quantitative' />
+            <column aggregation='Sum' datatype='real' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Fuel]' derivation='None' name='[none:Fuel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Technology]' derivation='None' name='[none:Technology:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Value]' derivation='Sum' name='[sum:Value:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.05oclpd0di546711f7y661pm4vap].[none:Fuel:nk]'>
+            <groupfilter function='member' level='[none:Fuel:nk]' member='&quot;Power&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.05oclpd0di546711f7y661pm4vap].[none:Technology:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Technology:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Technology:nk]' member='&quot;DieselImport&quot;' />
+                <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Forest&quot;' />
+                <groupfilter function='member' level='[none:Technology:nk]' member='&quot;WoodBurner&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.05oclpd0di546711f7y661pm4vap].[none:Technology:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Curtailment&quot;</bucket>
+              <bucket>&quot;Battery&quot;</bucket>
+              <bucket>&quot;Export&quot;</bucket>
+              <bucket>&quot;Import&quot;</bucket>
+              <bucket>&quot;PHS&quot;</bucket>
+              <bucket>&quot;SolarPV&quot;</bucket>
+              <bucket>&quot;WindOffshore&quot;</bucket>
+              <bucket>&quot;WindOnshore&quot;</bucket>
+              <bucket>&quot;BECCS&quot;</bucket>
+              <bucket>&quot;BEV&quot;</bucket>
+              <bucket>&quot;BiomassGenerator&quot;</bucket>
+              <bucket>&quot;CoalCHPPlant&quot;</bucket>
+              <bucket>&quot;CoalMine&quot;</bucket>
+              <bucket>&quot;CoalPowerPlant&quot;</bucket>
+              <bucket>&quot;GasCHPPlant&quot;</bucket>
+              <bucket>&quot;GasExtractor&quot;</bucket>
+              <bucket>&quot;GasPowerPlant&quot;</bucket>
+              <bucket>&quot;H2Car&quot;</bucket>
+              <bucket>&quot;LPGCar&quot;</bucket>
+              <bucket>&quot;Power2Gas&quot;</bucket>
+              <bucket>&quot;ElectricHeater&quot;</bucket>
+              <bucket>&quot;Demand&quot;</bucket>
+              <bucket>&quot;H2Tank&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.05oclpd0di546711f7y661pm4vap].[none:Year:ok]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.05oclpd0di546711f7y661pm4vap].[sum:Value:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.05oclpd0di546711f7y661pm4vap].[none:Fuel:nk]</column>
+            <column>[federated.05oclpd0di546711f7y661pm4vap].[none:Technology:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.05oclpd0di546711f7y661pm4vap].[sum:Value:qk]' scope='rows' value='kW' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.05oclpd0di546711f7y661pm4vap].[none:Year:ok]' value='131' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.05oclpd0di546711f7y661pm4vap].[sum:Value:qk]' value='22' />
+            <format attr='font-size' field='[federated.05oclpd0di546711f7y661pm4vap].[none:Year:ok]' value='26' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='font-size' value='15' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='font-size' value='15' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.05oclpd0di546711f7y661pm4vap].[none:Technology:nk]' value='Sources and Sinks'>
+              <formatted-text>
+                <run>Sources and Sinks</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='font-size' value='14' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='font-size' value='15' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.05oclpd0di546711f7y661pm4vap].[none:Technology:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.05oclpd0di546711f7y661pm4vap].[sum:Value:qk]</rows>
+        <cols>[federated.05oclpd0di546711f7y661pm4vap].[none:Year:ok]</cols>
+      </table>
+      <simple-id uuid='{C6EE2720-700A-409A-98DB-ECEEF035020E}' />
+    </worksheet>
+    <worksheet name='Generation'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Fuel Generation per Hour</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ProductionByTechnology' name='federated.05oclpd0di546711f7y661pm4vap' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05oclpd0di546711f7y661pm4vap'>
+            <column caption='Fuel1' datatype='string' name='[Fuel]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Hour1' datatype='integer' name='[Hour]' role='dimension' type='ordinal' />
+            <column caption='Technology1' datatype='string' name='[Technology]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Curtailment&quot;' value='Surplus (Potential)' />
+              </aliases>
+            </column>
+            <column datatype='real' name='[Value]' role='measure' type='quantitative' />
+            <column aggregation='Sum' datatype='real' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Fuel]' derivation='None' name='[none:Fuel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Hour]' derivation='None' name='[none:Hour:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Technology]' derivation='None' name='[none:Technology:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Value]' derivation='None' name='[none:Value:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Value]' derivation='Sum' name='[sum:Value:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.05oclpd0di546711f7y661pm4vap].[none:Fuel:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Fuel:nk]' />
+              <groupfilter function='member' level='[none:Fuel:nk]' member='&quot;FireWood&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.05oclpd0di546711f7y661pm4vap].[none:Fuel:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Power&quot;</bucket>
+              <bucket>&quot;Biomass&quot;</bucket>
+              <bucket>&quot;Coal&quot;</bucket>
+              <bucket>&quot;Gas&quot;</bucket>
+              <bucket>&quot;H2&quot;</bucket>
+              <bucket>&quot;Heat&quot;</bucket>
+              <bucket>&quot;Mobility&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <manual-sort column='[federated.05oclpd0di546711f7y661pm4vap].[none:Technology:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Curtailment&quot;</bucket>
+              <bucket>&quot;Battery&quot;</bucket>
+              <bucket>&quot;BECCS&quot;</bucket>
+              <bucket>&quot;BEV&quot;</bucket>
+              <bucket>&quot;BiomassGenerator&quot;</bucket>
+              <bucket>&quot;CoalCHPPlant&quot;</bucket>
+              <bucket>&quot;CoalMine&quot;</bucket>
+              <bucket>&quot;CoalPowerPlant&quot;</bucket>
+              <bucket>&quot;GasCHPPlant&quot;</bucket>
+              <bucket>&quot;GasExtractor&quot;</bucket>
+              <bucket>&quot;GasPowerPlant&quot;</bucket>
+              <bucket>&quot;H2Car&quot;</bucket>
+              <bucket>&quot;LPGCar&quot;</bucket>
+              <bucket>&quot;Power2Gas&quot;</bucket>
+              <bucket>&quot;WindOnshore&quot;</bucket>
+              <bucket>&quot;SolarPV&quot;</bucket>
+              <bucket>&quot;Demand&quot;</bucket>
+              <bucket>&quot;ElectricHeater&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='quantitative' column='[federated.05oclpd0di546711f7y661pm4vap].[none:Value:qk]' included-values='in-range'>
+            <min>0.0</min>
+            <max>105.59999999999999</max>
+          </filter>
+          <filter class='categorical' column='[federated.05oclpd0di546711f7y661pm4vap].[none:Year:ok]' filter-group='5'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Year:ok]' member='2030.0' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2040.0' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.05oclpd0di546711f7y661pm4vap].[none:Value:qk]</column>
+            <column>[federated.05oclpd0di546711f7y661pm4vap].[none:Year:ok]</column>
+            <column>[federated.05oclpd0di546711f7y661pm4vap].[none:Fuel:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.05oclpd0di546711f7y661pm4vap].[sum:Value:qk]' field-type='quantitative' range-type='independent' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.05oclpd0di546711f7y661pm4vap].[none:Technology:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.05oclpd0di546711f7y661pm4vap].[none:Fuel:nk] * [federated.05oclpd0di546711f7y661pm4vap].[sum:Value:qk])</rows>
+        <cols>[federated.05oclpd0di546711f7y661pm4vap].[none:Hour:ok]</cols>
+      </table>
+      <simple-id uuid='{5C19849F-39DC-478F-A53A-27A564A9F252}' />
+    </worksheet>
+    <worksheet name='Generation&amp;Use'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Energy Generation per Hour</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ProductionByTechnology' name='federated.05oclpd0di546711f7y661pm4vap' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05oclpd0di546711f7y661pm4vap'>
+            <column caption='Fuel1' datatype='string' name='[Fuel]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Hour1' datatype='integer' name='[Hour]' role='dimension' type='ordinal' />
+            <column caption='Technology1' datatype='string' name='[Technology]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Curtailment&quot;' value='Surplus (Potential)' />
+              </aliases>
+            </column>
+            <column datatype='real' name='[Value]' role='measure' type='quantitative' />
+            <column aggregation='Sum' datatype='real' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Fuel]' derivation='None' name='[none:Fuel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Hour]' derivation='None' name='[none:Hour:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Technology]' derivation='None' name='[none:Technology:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Value]' derivation='Sum' name='[sum:Value:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.05oclpd0di546711f7y661pm4vap].[none:Fuel:nk]'>
+            <groupfilter function='member' level='[none:Fuel:nk]' member='&quot;Power&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.05oclpd0di546711f7y661pm4vap].[none:Fuel:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Power&quot;</bucket>
+              <bucket>&quot;Biomass&quot;</bucket>
+              <bucket>&quot;Coal&quot;</bucket>
+              <bucket>&quot;Gas&quot;</bucket>
+              <bucket>&quot;H2&quot;</bucket>
+              <bucket>&quot;Heat&quot;</bucket>
+              <bucket>&quot;Mobility&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.05oclpd0di546711f7y661pm4vap].[none:Technology:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Technology:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Technology:nk]' member='&quot;DieselImport&quot;' />
+                <groupfilter function='member' level='[none:Technology:nk]' member='&quot;Forest&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.05oclpd0di546711f7y661pm4vap].[none:Technology:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Curtailment&quot;</bucket>
+              <bucket>&quot;PHS&quot;</bucket>
+              <bucket>&quot;Battery&quot;</bucket>
+              <bucket>&quot;Export&quot;</bucket>
+              <bucket>&quot;Import&quot;</bucket>
+              <bucket>&quot;H2Tank&quot;</bucket>
+              <bucket>&quot;BECCS&quot;</bucket>
+              <bucket>&quot;BEV&quot;</bucket>
+              <bucket>&quot;BiomassGenerator&quot;</bucket>
+              <bucket>&quot;SolarPV&quot;</bucket>
+              <bucket>&quot;WindOffshore&quot;</bucket>
+              <bucket>&quot;WindOnshore&quot;</bucket>
+              <bucket>&quot;CoalCHPPlant&quot;</bucket>
+              <bucket>&quot;CoalMine&quot;</bucket>
+              <bucket>&quot;CoalPowerPlant&quot;</bucket>
+              <bucket>&quot;GasCHPPlant&quot;</bucket>
+              <bucket>&quot;GasExtractor&quot;</bucket>
+              <bucket>&quot;GasPowerPlant&quot;</bucket>
+              <bucket>&quot;H2Car&quot;</bucket>
+              <bucket>&quot;LPGCar&quot;</bucket>
+              <bucket>&quot;Power2Gas&quot;</bucket>
+              <bucket>&quot;ElectricHeater&quot;</bucket>
+              <bucket>&quot;Demand&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.05oclpd0di546711f7y661pm4vap].[none:Year:ok]' filter-group='5'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Year:ok]' member='2030.0' />
+              <groupfilter function='member' level='[none:Year:ok]' member='2040.0' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.05oclpd0di546711f7y661pm4vap].[none:Year:ok]</column>
+            <column>[federated.05oclpd0di546711f7y661pm4vap].[none:Fuel:nk]</column>
+            <column>[federated.05oclpd0di546711f7y661pm4vap].[none:Technology:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.05oclpd0di546711f7y661pm4vap].[sum:Value:qk]' field-type='quantitative' range-type='independent' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.05oclpd0di546711f7y661pm4vap].[sum:Value:qk]' scope='rows' value='kW' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.05oclpd0di546711f7y661pm4vap].[none:Technology:nk]' value='Sources and Sinks'>
+              <formatted-text>
+                <run>Sources and Sinks</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.05oclpd0di546711f7y661pm4vap].[none:Technology:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.05oclpd0di546711f7y661pm4vap].[none:Fuel:nk] * [federated.05oclpd0di546711f7y661pm4vap].[sum:Value:qk])</rows>
+        <cols>[federated.05oclpd0di546711f7y661pm4vap].[none:Hour:ok]</cols>
+      </table>
+      <simple-id uuid='{43D58AB6-B660-450B-BD60-3F3BFBA635DA}' />
+    </worksheet>
+    <worksheet name='StorageLevel'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='StorageLevel' name='federated.0r50v4l1qsz0v21bhv82p1qugnhw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0r50v4l1qsz0v21bhv82p1qugnhw'>
+            <column datatype='string' name='[Fuel]' role='dimension' type='nominal' />
+            <column aggregation='Sum' datatype='integer' name='[Hour]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Storage]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Value]' role='measure' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Fuel]' derivation='None' name='[none:Fuel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Hour]' derivation='None' name='[none:Hour:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Storage]' derivation='None' name='[none:Storage:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Value]' derivation='Sum' name='[sum:Value:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0r50v4l1qsz0v21bhv82p1qugnhw].[none:Year:ok]'>
+            <groupfilter function='member' level='[none:Year:ok]' member='2030' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0r50v4l1qsz0v21bhv82p1qugnhw].[none:Year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0r50v4l1qsz0v21bhv82p1qugnhw].[sum:Value:qk]' field-type='quantitative' max='542.38799999999765' min='0.0' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.0r50v4l1qsz0v21bhv82p1qugnhw].[sum:Value:qk]' scope='rows' value='kWh' />
+            <format attr='width' field='[federated.0r50v4l1qsz0v21bhv82p1qugnhw].[sum:Value:qk]' value='100' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0r50v4l1qsz0v21bhv82p1qugnhw].[none:Storage:nk]' value='124' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0r50v4l1qsz0v21bhv82p1qugnhw].[none:Storage:nk]' />
+              <lod column='[federated.0r50v4l1qsz0v21bhv82p1qugnhw].[none:Fuel:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#555555' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0r50v4l1qsz0v21bhv82p1qugnhw].[none:Storage:nk] * [federated.0r50v4l1qsz0v21bhv82p1qugnhw].[sum:Value:qk])</rows>
+        <cols>[federated.0r50v4l1qsz0v21bhv82p1qugnhw].[none:Hour:ok]</cols>
+      </table>
+      <simple-id uuid='{1552F839-FC13-4BF3-AD4F-5359008277FA}' />
+    </worksheet>
+    <worksheet name='Surplus Potential'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Curtailment' name='federated.1vixc6o0fs74oc16ktojp08af7b6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1vixc6o0fs74oc16ktojp08af7b6'>
+            <column datatype='string' name='[Fuel]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Hour]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Value]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Fuel]' derivation='None' name='[none:Fuel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Hour]' derivation='None' name='[none:Hour:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Value]' derivation='Sum' name='[sum:Value:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1vixc6o0fs74oc16ktojp08af7b6].[none:Fuel:nk]'>
+            <groupfilter function='member' level='[none:Fuel:nk]' member='&quot;Power&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1vixc6o0fs74oc16ktojp08af7b6].[none:Year:ok]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Year:ok]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Year:ok]' member='2026' />
+                <groupfilter function='member' level='[none:Year:ok]' member='2028' />
+                <groupfilter function='member' level='[none:Year:ok]' member='%null%' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1vixc6o0fs74oc16ktojp08af7b6].[none:Year:ok]</column>
+            <column>[federated.1vixc6o0fs74oc16ktojp08af7b6].[none:Fuel:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1vixc6o0fs74oc16ktojp08af7b6].[sum:Value:qk]' scope='rows' value='kW' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.1vixc6o0fs74oc16ktojp08af7b6].[none:Fuel:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1vixc6o0fs74oc16ktojp08af7b6].[sum:Value:qk]</rows>
+        <cols>[federated.1vixc6o0fs74oc16ktojp08af7b6].[none:Hour:qk]</cols>
+      </table>
+      <simple-id uuid='{E7D001B5-4150-4755-88E2-322007F07ABD}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='D_AnnualGeneration&amp;Use'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='ProductionByTechnology' name='federated.05oclpd0di546711f7y661pm4vap' />
+      </datasources>
+      <datasource-dependencies datasource='federated.05oclpd0di546711f7y661pm4vap'>
+        <column caption='Fuel1' datatype='string' name='[Fuel]' role='dimension' type='nominal' />
+        <column-instance column='[Fuel]' derivation='None' name='[none:Fuel:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98214' id='7' param='horz' type-v2='layout-flow' w='98848' x='576' y='893'>
+            <zone h='98214' id='5' type-v2='layout-basic' w='81857' x='576' y='893'>
+              <zone h='98214' id='3' name='AnnualGeneration&amp;Use' show-title='false' w='81857' x='576' y='893'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='236' h='98214' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='16991' x='82433' y='893'>
+              <zone h='7031' id='8' mode='dropdown' name='AnnualGeneration&amp;Use' param='[federated.05oclpd0di546711f7y661pm4vap].[none:Fuel:nk]' type-v2='filter' w='16991' x='82433' y='893'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='4130' id='10' mode='dropdown' name='AnnualGeneration&amp;Use' param='[federated.05oclpd0di546711f7y661pm4vap].[none:Region:nk]' type-v2='filter' values='database' w='16991' x='82433' y='7924'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='41630' id='9' name='AnnualGeneration&amp;Use' pane-specification-id='0' param='[federated.05oclpd0di546711f7y661pm4vap].[none:Technology:nk]' type-v2='color' w='16991' x='82433' y='12054'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='100' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='99' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone h='7031' id='8' mode='dropdown' name='AnnualGeneration&amp;Use' param='[federated.05oclpd0di546711f7y661pm4vap].[none:Fuel:nk]' type-v2='filter' w='16991' x='82433' y='893'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4130' id='10' mode='dropdown' name='AnnualGeneration&amp;Use' param='[federated.05oclpd0di546711f7y661pm4vap].[none:Region:nk]' type-v2='filter' values='database' w='16991' x='82433' y='7924'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98214' id='3' is-fixed='true' name='AnnualGeneration&amp;Use' show-title='false' w='81857' x='576' y='893'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='41630' id='9' name='AnnualGeneration&amp;Use' pane-specification-id='0' param='[federated.05oclpd0di546711f7y661pm4vap].[none:Technology:nk]' type-v2='color' w='16991' x='82433' y='12054'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A52C7730-6EF4-4C31-A5E7-0BB93925D29D}' />
+    </dashboard>
+    <dashboard name='D_Generation'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='ProductionByTechnology' name='federated.05oclpd0di546711f7y661pm4vap' />
+      </datasources>
+      <datasource-dependencies datasource='federated.05oclpd0di546711f7y661pm4vap'>
+        <column aggregation='Sum' datatype='real' name='[Year]' role='dimension' type='ordinal' />
+        <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98214' id='7' param='horz' type-v2='layout-flow' w='98848' x='576' y='893'>
+            <zone h='98214' id='5' type-v2='layout-basic' w='87329' x='576' y='893'>
+              <zone h='98214' id='3' name='Generation' w='87329' x='576' y='893'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98214' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='11519' x='87905' y='893'>
+              <zone h='2902' id='35' mode='dropdown' name='Generation' param='[federated.05oclpd0di546711f7y661pm4vap].[none:Region:nk]' type-v2='filter' values='database' w='11519' x='87905' y='893'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5804' id='36' mode='dropdown' name='Generation' param='[federated.05oclpd0di546711f7y661pm4vap].[none:Year:ok]' type-v2='filter' values='database' w='11519' x='87905' y='3795'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='36384' id='8' name='Generation' pane-specification-id='0' param='[federated.05oclpd0di546711f7y661pm4vap].[none:Technology:nk]' type-v2='color' w='11519' x='87905' y='9599'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='124' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='123' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone h='2902' id='35' mode='dropdown' name='Generation' param='[federated.05oclpd0di546711f7y661pm4vap].[none:Region:nk]' type-v2='filter' values='database' w='11519' x='87905' y='893'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5804' id='36' mode='dropdown' name='Generation' param='[federated.05oclpd0di546711f7y661pm4vap].[none:Year:ok]' type-v2='filter' values='database' w='11519' x='87905' y='3795'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98214' id='3' is-fixed='true' name='Generation' w='87329' x='576' y='893'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='36384' id='8' name='Generation' pane-specification-id='0' param='[federated.05oclpd0di546711f7y661pm4vap].[none:Technology:nk]' type-v2='color' w='11519' x='87905' y='9599'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D8EE3EA8-FE7E-4559-B726-D64E475D2F85}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='D_Generation&amp;Use'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='ProductionByTechnology' name='federated.05oclpd0di546711f7y661pm4vap' />
+      </datasources>
+      <datasource-dependencies datasource='federated.05oclpd0di546711f7y661pm4vap'>
+        <column aggregation='Sum' datatype='real' name='[Year]' role='dimension' type='ordinal' />
+        <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98214' id='5' param='horz' type-v2='layout-flow' w='98848' x='576' y='893'>
+            <zone h='98214' id='3' type-v2='layout-basic' w='87329' x='576' y='893'>
+              <zone h='98214' id='1' name='Generation&amp;Use' w='87329' x='576' y='893'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98214' id='4' is-fixed='true' param='vert' type-v2='layout-flow' w='11519' x='87905' y='893'>
+              <zone h='2902' id='15' mode='dropdown' name='Generation&amp;Use' param='[federated.05oclpd0di546711f7y661pm4vap].[none:Region:nk]' type-v2='filter' values='database' w='11519' x='87905' y='893'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5804' id='26' mode='dropdown' name='Generation&amp;Use' param='[federated.05oclpd0di546711f7y661pm4vap].[none:Year:ok]' type-v2='filter' values='database' w='11519' x='87905' y='3795'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='31920' id='6' name='Generation&amp;Use' pane-specification-id='0' param='[federated.05oclpd0di546711f7y661pm4vap].[none:Technology:nk]' type-v2='color' w='11519' x='87905' y='9599'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='114' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='113' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone h='2902' id='15' mode='dropdown' name='Generation&amp;Use' param='[federated.05oclpd0di546711f7y661pm4vap].[none:Region:nk]' type-v2='filter' values='database' w='11519' x='87905' y='893'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5804' id='26' mode='dropdown' name='Generation&amp;Use' param='[federated.05oclpd0di546711f7y661pm4vap].[none:Year:ok]' type-v2='filter' values='database' w='11519' x='87905' y='3795'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98214' id='1' is-fixed='true' name='Generation&amp;Use' w='87329' x='576' y='893'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='31920' id='6' name='Generation&amp;Use' pane-specification-id='0' param='[federated.05oclpd0di546711f7y661pm4vap].[none:Technology:nk]' type-v2='color' w='11519' x='87905' y='9599'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{F7792125-D968-4546-AF31-D357F0310743}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='D_StorageLevel'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='StorageLevel' name='federated.0r50v4l1qsz0v21bhv82p1qugnhw' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0r50v4l1qsz0v21bhv82p1qugnhw'>
+        <column aggregation='Sum' datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+        <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98214' id='19' param='horz' type-v2='layout-flow' w='98848' x='576' y='893'>
+            <zone h='98214' id='17' type-v2='layout-basic' w='87329' x='576' y='893'>
+              <zone h='98214' id='3' name='StorageLevel' w='87329' x='576' y='893'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98214' id='18' is-fixed='true' param='vert' type-v2='layout-flow' w='11519' x='87905' y='893'>
+              <zone h='5804' id='20' mode='dropdown' name='StorageLevel' param='[federated.0r50v4l1qsz0v21bhv82p1qugnhw].[none:Year:ok]' type-v2='filter' values='database' w='11519' x='87905' y='893'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='102' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='101' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone h='5804' id='20' mode='dropdown' name='StorageLevel' param='[federated.0r50v4l1qsz0v21bhv82p1qugnhw].[none:Year:ok]' type-v2='filter' values='database' w='11519' x='87905' y='893'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98214' id='3' is-fixed='true' name='StorageLevel' w='87329' x='576' y='893'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{5C42BBEC-062D-4E1C-9897-B390AF61189F}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='72'>
+    <window class='worksheet' name='AnnualGeneration&amp;Use'>
+      <cards>
+        <edge name='left'>
+          <strip size='152'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.05oclpd0di546711f7y661pm4vap].[none:Fuel:nk]' type='filter' />
+          </strip>
+          <strip size='259'>
+            <card pane-specification-id='0' param='[federated.05oclpd0di546711f7y661pm4vap].[none:Technology:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{006B8012-974C-4072-9E7E-980CF4CE1586}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Generation&amp;Use'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.05oclpd0di546711f7y661pm4vap].[none:Technology:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B436C4F4-2A85-480B-BC5D-312A4985A7E4}' />
+    </window>
+    <window class='worksheet' name='StorageLevel'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.0r50v4l1qsz0v21bhv82p1qugnhw].[none:Year:ok]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0r50v4l1qsz0v21bhv82p1qugnhw].[none:Storage:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E2A876A2-4DEC-47C8-8217-DF2A380BF895}' />
+    </window>
+    <window class='worksheet' name='Surplus Potential'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1vixc6o0fs74oc16ktojp08af7b6].[none:Fuel:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B56318A4-C5CB-4D10-BEA7-76CB7CA2F5A0}' />
+    </window>
+    <window class='dashboard' name='D_AnnualGeneration&amp;Use'>
+      <viewpoints>
+        <viewpoint name='AnnualGeneration&amp;Use'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{56CCFD82-3405-4CFB-BB08-ADC4FC245DAD}' />
+    </window>
+    <window class='dashboard' name='D_Generation'>
+      <viewpoints>
+        <viewpoint name='Generation'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{D8232FF9-B084-487F-AE05-F4EA79065C67}' />
+    </window>
+    <window class='dashboard' name='D_Generation&amp;Use'>
+      <viewpoints>
+        <viewpoint name='Generation&amp;Use'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{D7335C24-2BE9-4E16-B9F2-42092D6F8CDD}' />
+    </window>
+    <window class='dashboard' name='D_StorageLevel'>
+      <viewpoints>
+        <viewpoint name='StorageLevel'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{7A2C3180-2C6E-4031-B091-10067D5FAABB}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Generation'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.05oclpd0di546711f7y661pm4vap].[none:Technology:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F8EC9A0F-3FC0-4975-972E-81D18DD71F90}' />
+    </window>
+  </windows>
+</workbook>
