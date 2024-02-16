@@ -18,7 +18,7 @@ Year,Technology,Type,Value
 2028,DieselImport,NewCapacity,2.0
 2028,Forest,NewCapacity,14.0
 2028,ElectricStove,NewCapacity,3.0
-2028,ElectricVehicle,NewCapacity,2.000000000000001
+2028,ElectricVehicle,NewCapacity,2.0
 2028,WoodBurner,NewCapacity,7.000000000000028
 2028,ElectricHeatPump,NewCapacity,18.0
 2030,SolarPV,NewCapacity,190.0
@@ -26,11 +26,11 @@ Year,Technology,Type,Value
 2030,HydroPower,NewCapacity,0.0
 2030,DieselGenerator,NewCapacity,0.0
 2030,Tidal,NewCapacity,0.0
-2030,DieselImport,NewCapacity,62.0
-2030,Forest,NewCapacity,14.0
+2030,DieselImport,NewCapacity,18.0
+2030,Forest,NewCapacity,12.000000000000057
 2030,ElectricStove,NewCapacity,3.0
-2030,ElectricVehicle,NewCapacity,4.999999999999999
-2030,WoodBurner,NewCapacity,7.0
+2030,ElectricVehicle,NewCapacity,5.0
+2030,WoodBurner,NewCapacity,6.0
 2030,ElectricHeatPump,NewCapacity,140.0
 2026,SolarPV,TotalCapacity,441.99999999999994
 2026,WindOnshore,TotalCapacity,24.0
@@ -51,7 +51,7 @@ Year,Technology,Type,Value
 2028,DieselImport,TotalCapacity,25.0
 2028,Forest,TotalCapacity,404.0
 2028,ElectricStove,TotalCapacity,7.0
-2028,ElectricVehicle,TotalCapacity,5.000000000000001
+2028,ElectricVehicle,TotalCapacity,5.0
 2028,WoodBurner,TotalCapacity,202.0
 2028,ElectricHeatPump,TotalCapacity,181.0
 2030,SolarPV,TotalCapacity,682.0
@@ -59,9 +59,9 @@ Year,Technology,Type,Value
 2030,HydroPower,TotalCapacity,112.0
 2030,DieselGenerator,TotalCapacity,76.0
 2030,Tidal,TotalCapacity,0.0
-2030,DieselImport,TotalCapacity,87.0
-2030,Forest,TotalCapacity,418.0
-2030,ElectricStove,TotalCapacity,10.0
+2030,DieselImport,TotalCapacity,43.0
+2030,Forest,TotalCapacity,416.0
+2030,ElectricStove,TotalCapacity,10.000000000000002
 2030,ElectricVehicle,TotalCapacity,10.0
-2030,WoodBurner,TotalCapacity,209.0
+2030,WoodBurner,TotalCapacity,208.0
 2030,ElectricHeatPump,TotalCapacity,321.0
