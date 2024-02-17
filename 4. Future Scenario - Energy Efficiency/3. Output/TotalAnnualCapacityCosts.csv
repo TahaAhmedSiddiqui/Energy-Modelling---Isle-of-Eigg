@@ -1,10 +1,10 @@
 Year,Technology,Value
 2026,DieselGenerator,0.0
 2026,HydroPower,0.0
-2026,LFPBattery,36108.6796857143
-2026,LeadAcidBattery,48786.581428571415
-2026,SolarPV,0.0
-2026,Tidal,180000.0
+2026,LFPBattery,36427.42006666662
+2026,LeadAcidBattery,28744.345833333384
+2026,SolarPV,5000.0
+2026,Tidal,0.0
 2026,WindOnshore,0.0
 2028,DieselGenerator,0.0
 2028,HydroPower,0.0
