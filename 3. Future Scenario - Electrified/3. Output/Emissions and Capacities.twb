@@ -30,207 +30,6 @@
     </style-rule>
   </style>
   <datasources>
-    <datasource caption='Capacity' inline='true' name='federated.0688mxb1idrdyg18rd47x1bgcngz' version='18.1'>
-      <connection class='federated'>
-        <named-connections>
-          <named-connection caption='Capacity' name='textscan.0h4h4k705h4re816f9wml0u5d57c'>
-            <connection class='textscan' directory='C:/Users/tahaa/Documents/GitHub/Energy-Modelling---Isle-of-Eigg/3. Future Scenario - Electrified/3. Output' filename='Capacity.csv' password='' server='' />
-          </named-connection>
-        </named-connections>
-        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0h4h4k705h4re816f9wml0u5d57c' name='Capacity.csv' table='[Capacity#csv]' type='table'>
-          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
-            <column datatype='integer' name='Year' ordinal='0' />
-            <column datatype='string' name='Technology' ordinal='1' />
-            <column datatype='string' name='Type' ordinal='2' />
-            <column datatype='real' name='Value' ordinal='3' />
-          </columns>
-        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0h4h4k705h4re816f9wml0u5d57c' name='Capacity.csv' table='[Capacity#csv]' type='table'>
-          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
-            <column datatype='integer' name='Year' ordinal='0' />
-            <column datatype='string' name='Technology' ordinal='1' />
-            <column datatype='string' name='Type' ordinal='2' />
-            <column datatype='real' name='Value' ordinal='3' />
-          </columns>
-        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
-        <metadata-records>
-          <metadata-record class='capability'>
-            <remote-name />
-            <remote-type>0</remote-type>
-            <parent-name>[Capacity.csv]</parent-name>
-            <remote-alias />
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
-              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
-              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
-              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
-              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
-              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Year</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Year]</local-name>
-            <parent-name>[Capacity.csv]</parent-name>
-            <remote-alias>Year</remote-alias>
-            <ordinal>0</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Capacity.csv_1C327F70AE82434FB42C26DDCDCF2039]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Technology</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[Technology]</local-name>
-            <parent-name>[Capacity.csv]</parent-name>
-            <remote-alias>Technology</remote-alias>
-            <ordinal>1</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RUS' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Capacity.csv_1C327F70AE82434FB42C26DDCDCF2039]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Type</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[Type]</local-name>
-            <parent-name>[Capacity.csv]</parent-name>
-            <remote-alias>Type</remote-alias>
-            <ordinal>2</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RUS' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Capacity.csv_1C327F70AE82434FB42C26DDCDCF2039]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Value</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[Value]</local-name>
-            <parent-name>[Capacity.csv]</parent-name>
-            <remote-alias>Value</remote-alias>
-            <ordinal>3</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Capacity.csv_1C327F70AE82434FB42C26DDCDCF2039]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-        </metadata-records>
-      </connection>
-      <aliases enabled='yes' />
-      <column datatype='string' name='[Technology]' role='dimension' type='nominal' />
-      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
-      <_.fcp.ObjectModelTableType.true...column caption='Capacity.csv' datatype='table' name='[__tableau_internal_object_id__].[Capacity.csv_1C327F70AE82434FB42C26DDCDCF2039]' role='measure' type='quantitative' />
-      <column-instance column='[Technology]' derivation='None' name='[none:Technology:nk]' pivot='key' type='nominal' />
-      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
-      <style>
-        <style-rule element='mark'>
-          <encoding attr='color' field='[none:Technology:nk]' type='palette'>
-            <map to='#198894'>
-              <bucket>&quot;H2Car&quot;</bucket>
-            </map>
-            <map to='#215968'>
-              <bucket>&quot;WindOffshore&quot;</bucket>
-            </map>
-            <map to='#26c6da'>
-              <bucket>&quot;Power2Gas&quot;</bucket>
-            </map>
-            <map to='#316a00'>
-              <bucket>&quot;BECCS&quot;</bucket>
-            </map>
-            <map to='#499894'>
-              <bucket>&quot;Tidal&quot;</bucket>
-            </map>
-            <map to='#4d3e35'>
-              <bucket>&quot;CoalCHPPlant&quot;</bucket>
-            </map>
-            <map to='#4e79a7'>
-              <bucket>&quot;WindOnshore&quot;</bucket>
-            </map>
-            <map to='#59a14f'>
-              <bucket>&quot;ElectricStove&quot;</bucket>
-            </map>
-            <map to='#754937'>
-              <bucket>&quot;CoalPowerPlant&quot;</bucket>
-            </map>
-            <map to='#76b7b2'>
-              <bucket>&quot;DieselImport&quot;</bucket>
-            </map>
-            <map to='#7cb342'>
-              <bucket>&quot;BiomassGenerator&quot;</bucket>
-            </map>
-            <map to='#945c45'>
-              <bucket>&quot;CoalMine&quot;</bucket>
-            </map>
-            <map to='#9d7660'>
-              <bucket>&quot;DieselGenerator&quot;</bucket>
-            </map>
-            <map to='#a0cbe8'>
-              <bucket>&quot;HydroPower&quot;</bucket>
-            </map>
-            <map to='#ae393f'>
-              <bucket>&quot;GasCHPPlant&quot;</bucket>
-            </map>
-            <map to='#b0310e'>
-              <bucket>&quot;GasExtractor&quot;</bucket>
-            </map>
-            <map to='#b07aa1'>
-              <bucket>&quot;Forest&quot;</bucket>
-            </map>
-            <map to='#b7c7cf'>
-              <bucket>&quot;LPGCar&quot;</bucket>
-            </map>
-            <map to='#bab0ac'>
-              <bucket>&quot;WoodBurner&quot;</bucket>
-            </map>
-            <map to='#cf93c1'>
-              <bucket>&quot;BEV&quot;</bucket>
-            </map>
-            <map to='#dce775'>
-              <bucket>&quot;ElectricHeater&quot;</bucket>
-            </map>
-            <map to='#e54213'>
-              <bucket>&quot;GasPowerPlant&quot;</bucket>
-            </map>
-            <map to='#edc948'>
-              <bucket>&quot;ElectricVehicle&quot;</bucket>
-            </map>
-            <map to='#f1ce63'>
-              <bucket>&quot;SolarPV&quot;</bucket>
-            </map>
-          </encoding>
-        </style-rule>
-      </style>
-      <semantic-values>
-        <semantic-value key='[Country].[Name]' value='&quot;Germany&quot;' />
-      </semantic-values>
-      <date-options start-of-week='monday' />
-      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-        <objects>
-          <object caption='Capacity.csv' id='Capacity.csv_1C327F70AE82434FB42C26DDCDCF2039'>
-            <properties context=''>
-              <relation connection='textscan.0h4h4k705h4re816f9wml0u5d57c' name='Capacity.csv' table='[Capacity#csv]' type='table'>
-                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
-                  <column datatype='integer' name='Year' ordinal='0' />
-                  <column datatype='string' name='Technology' ordinal='1' />
-                  <column datatype='string' name='Type' ordinal='2' />
-                  <column datatype='real' name='Value' ordinal='3' />
-                </columns>
-              </relation>
-            </properties>
-          </object>
-        </objects>
-      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-    </datasource>
     <datasource caption='Emissions' inline='true' name='federated.1qvpjux1awro6714hebao0ngwlg0' version='18.1'>
       <connection class='federated'>
         <named-connections>
@@ -498,166 +297,6 @@
         </objects>
       </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
     </datasource>
-    <datasource caption='StorageCapacity' inline='true' name='federated.0s4ew8o07xmibl1a3pso71tol277' version='18.1'>
-      <connection class='federated'>
-        <named-connections>
-          <named-connection caption='StorageCapacity' name='textscan.0bpebwq06a77kt1f3kwvd0gpa5ko'>
-            <connection class='textscan' directory='C:/Users/tahaa/Documents/GitHub/Energy-Modelling---Isle-of-Eigg/3. Future Scenario - Electrified/3. Output' filename='StorageCapacity.csv' password='' server='' />
-          </named-connection>
-        </named-connections>
-        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0bpebwq06a77kt1f3kwvd0gpa5ko' name='StorageCapacity.csv' table='[StorageCapacity#csv]' type='table'>
-          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
-            <column datatype='integer' name='Year' ordinal='0' />
-            <column datatype='string' name='Storage' ordinal='1' />
-            <column datatype='string' name='Fuel' ordinal='2' />
-            <column datatype='string' name='Type' ordinal='3' />
-            <column datatype='real' name='Value' ordinal='4' />
-          </columns>
-        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0bpebwq06a77kt1f3kwvd0gpa5ko' name='StorageCapacity.csv' table='[StorageCapacity#csv]' type='table'>
-          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
-            <column datatype='integer' name='Year' ordinal='0' />
-            <column datatype='string' name='Storage' ordinal='1' />
-            <column datatype='string' name='Fuel' ordinal='2' />
-            <column datatype='string' name='Type' ordinal='3' />
-            <column datatype='real' name='Value' ordinal='4' />
-          </columns>
-        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
-        <metadata-records>
-          <metadata-record class='capability'>
-            <remote-name />
-            <remote-type>0</remote-type>
-            <parent-name>[StorageCapacity.csv]</parent-name>
-            <remote-alias />
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
-              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
-              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
-              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
-              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
-              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
-              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Year</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Year]</local-name>
-            <parent-name>[StorageCapacity.csv]</parent-name>
-            <remote-alias>Year</remote-alias>
-            <ordinal>0</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[StorageCapacity.csv_756E18275CAE4806837F94ECD839C848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Storage</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[Storage]</local-name>
-            <parent-name>[StorageCapacity.csv]</parent-name>
-            <remote-alias>Storage</remote-alias>
-            <ordinal>1</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RGB' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[StorageCapacity.csv_756E18275CAE4806837F94ECD839C848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Fuel</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[Fuel]</local-name>
-            <parent-name>[StorageCapacity.csv]</parent-name>
-            <remote-alias>Fuel</remote-alias>
-            <ordinal>2</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RGB' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[StorageCapacity.csv_756E18275CAE4806837F94ECD839C848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Type</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[Type]</local-name>
-            <parent-name>[StorageCapacity.csv]</parent-name>
-            <remote-alias>Type</remote-alias>
-            <ordinal>3</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RGB' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[StorageCapacity.csv_756E18275CAE4806837F94ECD839C848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Value</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[Value]</local-name>
-            <parent-name>[StorageCapacity.csv]</parent-name>
-            <remote-alias>Value</remote-alias>
-            <ordinal>4</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[StorageCapacity.csv_756E18275CAE4806837F94ECD839C848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-        </metadata-records>
-      </connection>
-      <aliases enabled='yes' />
-      <column datatype='string' name='[Storage]' role='dimension' type='nominal' />
-      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
-      <_.fcp.ObjectModelTableType.true...column caption='StorageCapacity.csv' datatype='table' name='[__tableau_internal_object_id__].[StorageCapacity.csv_756E18275CAE4806837F94ECD839C848]' role='measure' type='quantitative' />
-      <column-instance column='[Storage]' derivation='None' name='[none:Storage:nk]' pivot='key' type='nominal' />
-      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
-      <style>
-        <style-rule element='mark'>
-          <encoding attr='color' field='[none:Storage:nk]' type='palette'>
-            <map to='#e15759'>
-              <bucket>&quot;LeadAcidBattery&quot;</bucket>
-            </map>
-            <map to='#e15759'>
-              <bucket>&quot;LiIonBattery&quot;</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>&quot;LFPBattery&quot;</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>&quot;LiFePO4Battery&quot;</bucket>
-            </map>
-          </encoding>
-        </style-rule>
-      </style>
-      <semantic-values>
-        <semantic-value key='[Country].[Name]' value='&quot;Germany&quot;' />
-      </semantic-values>
-      <date-options start-of-week='monday' />
-      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-        <objects>
-          <object caption='StorageCapacity.csv' id='StorageCapacity.csv_756E18275CAE4806837F94ECD839C848'>
-            <properties context=''>
-              <relation connection='textscan.0bpebwq06a77kt1f3kwvd0gpa5ko' name='StorageCapacity.csv' table='[StorageCapacity#csv]' type='table'>
-                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
-                  <column datatype='integer' name='Year' ordinal='0' />
-                  <column datatype='string' name='Storage' ordinal='1' />
-                  <column datatype='string' name='Fuel' ordinal='2' />
-                  <column datatype='string' name='Type' ordinal='3' />
-                  <column datatype='real' name='Value' ordinal='4' />
-                </columns>
-              </relation>
-            </properties>
-          </object>
-        </objects>
-      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-    </datasource>
     <datasource caption='TotalAnnualCapitalCosts' inline='true' name='federated.13uzqp21vxucyq1gho2i611v5nzc' version='18.1'>
       <connection class='federated'>
         <named-connections>
@@ -879,7 +518,6 @@
             <ordinal>5</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
-            <approx-count>1</approx-count>
             <scale>1</scale>
             <width>1073741823</width>
             <contains-null>true</contains-null>
@@ -1151,6 +789,367 @@
                   <column datatype='string' name='F1' ordinal='0' />
                   <column datatype='integer' name='F2' ordinal='1' />
                   <column datatype='integer' name='F3' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Capacity' inline='true' name='federated.0688mxb1idrdyg18rd47x1bgcngz' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Capacity' name='textscan.0h4h4k705h4re816f9wml0u5d57c'>
+            <connection class='textscan' directory='C:/Users/tahaa/Documents/GitHub/Energy-Modelling---Isle-of-Eigg/3. Future Scenario - Electrified/3. Output' filename='Capacity.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0h4h4k705h4re816f9wml0u5d57c' name='Capacity.csv' table='[Capacity#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='string' name='Technology' ordinal='1' />
+            <column datatype='string' name='Type' ordinal='2' />
+            <column datatype='real' name='Value' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0h4h4k705h4re816f9wml0u5d57c' name='Capacity.csv' table='[Capacity#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='string' name='Technology' ordinal='1' />
+            <column datatype='string' name='Type' ordinal='2' />
+            <column datatype='real' name='Value' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Capacity.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Capacity.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Capacity.csv_1C327F70AE82434FB42C26DDCDCF2039]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Technology</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Technology]</local-name>
+            <parent-name>[Capacity.csv]</parent-name>
+            <remote-alias>Technology</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Capacity.csv_1C327F70AE82434FB42C26DDCDCF2039]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Type]</local-name>
+            <parent-name>[Capacity.csv]</parent-name>
+            <remote-alias>Type</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Capacity.csv_1C327F70AE82434FB42C26DDCDCF2039]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Value]</local-name>
+            <parent-name>[Capacity.csv]</parent-name>
+            <remote-alias>Value</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Capacity.csv_1C327F70AE82434FB42C26DDCDCF2039]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Technology]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Capacity.csv' datatype='table' name='[__tableau_internal_object_id__].[Capacity.csv_1C327F70AE82434FB42C26DDCDCF2039]' role='measure' type='quantitative' />
+      <column-instance column='[Technology]' derivation='None' name='[none:Technology:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Technology:nk]' type='palette'>
+            <map to='#198894'>
+              <bucket>&quot;H2Car&quot;</bucket>
+            </map>
+            <map to='#215968'>
+              <bucket>&quot;WindOffshore&quot;</bucket>
+            </map>
+            <map to='#26c6da'>
+              <bucket>&quot;Power2Gas&quot;</bucket>
+            </map>
+            <map to='#316a00'>
+              <bucket>&quot;BECCS&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Tidal&quot;</bucket>
+            </map>
+            <map to='#4d3e35'>
+              <bucket>&quot;CoalCHPPlant&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;WindOnshore&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;ElectricStove&quot;</bucket>
+            </map>
+            <map to='#754937'>
+              <bucket>&quot;CoalPowerPlant&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;DieselImport&quot;</bucket>
+            </map>
+            <map to='#7cb342'>
+              <bucket>&quot;BiomassGenerator&quot;</bucket>
+            </map>
+            <map to='#945c45'>
+              <bucket>&quot;CoalMine&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;DieselGenerator&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;HydroPower&quot;</bucket>
+            </map>
+            <map to='#ae393f'>
+              <bucket>&quot;GasCHPPlant&quot;</bucket>
+            </map>
+            <map to='#b0310e'>
+              <bucket>&quot;GasExtractor&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Forest&quot;</bucket>
+            </map>
+            <map to='#b7c7cf'>
+              <bucket>&quot;LPGCar&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;WoodBurner&quot;</bucket>
+            </map>
+            <map to='#cf93c1'>
+              <bucket>&quot;BEV&quot;</bucket>
+            </map>
+            <map to='#dce775'>
+              <bucket>&quot;ElectricHeater&quot;</bucket>
+            </map>
+            <map to='#e54213'>
+              <bucket>&quot;GasPowerPlant&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;ElectricVehicle&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;SolarPV&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Germany&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Capacity.csv' id='Capacity.csv_1C327F70AE82434FB42C26DDCDCF2039'>
+            <properties context=''>
+              <relation connection='textscan.0h4h4k705h4re816f9wml0u5d57c' name='Capacity.csv' table='[Capacity#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Year' ordinal='0' />
+                  <column datatype='string' name='Technology' ordinal='1' />
+                  <column datatype='string' name='Type' ordinal='2' />
+                  <column datatype='real' name='Value' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='StorageCapacity' inline='true' name='federated.0s4ew8o07xmibl1a3pso71tol277' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='StorageCapacity' name='textscan.0bpebwq06a77kt1f3kwvd0gpa5ko'>
+            <connection class='textscan' directory='C:/Users/tahaa/Documents/GitHub/Energy-Modelling---Isle-of-Eigg/3. Future Scenario - Electrified/3. Output' filename='StorageCapacity.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0bpebwq06a77kt1f3kwvd0gpa5ko' name='StorageCapacity.csv' table='[StorageCapacity#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='string' name='Storage' ordinal='1' />
+            <column datatype='string' name='Fuel' ordinal='2' />
+            <column datatype='string' name='Type' ordinal='3' />
+            <column datatype='real' name='Value' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0bpebwq06a77kt1f3kwvd0gpa5ko' name='StorageCapacity.csv' table='[StorageCapacity#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='string' name='Storage' ordinal='1' />
+            <column datatype='string' name='Fuel' ordinal='2' />
+            <column datatype='string' name='Type' ordinal='3' />
+            <column datatype='real' name='Value' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[StorageCapacity.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[StorageCapacity.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[StorageCapacity.csv_756E18275CAE4806837F94ECD839C848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Storage</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Storage]</local-name>
+            <parent-name>[StorageCapacity.csv]</parent-name>
+            <remote-alias>Storage</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[StorageCapacity.csv_756E18275CAE4806837F94ECD839C848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fuel</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Fuel]</local-name>
+            <parent-name>[StorageCapacity.csv]</parent-name>
+            <remote-alias>Fuel</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[StorageCapacity.csv_756E18275CAE4806837F94ECD839C848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Type]</local-name>
+            <parent-name>[StorageCapacity.csv]</parent-name>
+            <remote-alias>Type</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[StorageCapacity.csv_756E18275CAE4806837F94ECD839C848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Value]</local-name>
+            <parent-name>[StorageCapacity.csv]</parent-name>
+            <remote-alias>Value</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[StorageCapacity.csv_756E18275CAE4806837F94ECD839C848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Storage]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='StorageCapacity.csv' datatype='table' name='[__tableau_internal_object_id__].[StorageCapacity.csv_756E18275CAE4806837F94ECD839C848]' role='measure' type='quantitative' />
+      <column-instance column='[Storage]' derivation='None' name='[none:Storage:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Storage:nk]' type='palette'>
+            <map to='#e15759'>
+              <bucket>&quot;LeadAcidBattery&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;LiIonBattery&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;LFPBattery&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;LiFePO4Battery&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Germany&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='StorageCapacity.csv' id='StorageCapacity.csv_756E18275CAE4806837F94ECD839C848'>
+            <properties context=''>
+              <relation connection='textscan.0bpebwq06a77kt1f3kwvd0gpa5ko' name='StorageCapacity.csv' table='[StorageCapacity#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='integer' name='Year' ordinal='0' />
+                  <column datatype='string' name='Storage' ordinal='1' />
+                  <column datatype='string' name='Fuel' ordinal='2' />
+                  <column datatype='string' name='Type' ordinal='3' />
+                  <column datatype='real' name='Value' ordinal='4' />
                 </columns>
               </relation>
             </properties>
@@ -2122,7 +2121,7 @@
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='160'>
+          <strip size='215'>
             <card pane-specification-id='0' param='[federated.0688mxb1idrdyg18rd47x1bgcngz].[none:Technology:nk]' type='color' />
           </strip>
         </edge>
@@ -2139,7 +2138,7 @@
       </viewpoint>
       <simple-id uuid='{57BAEF1F-1578-4771-9A3C-0F8D4F560D3D}' />
     </window>
-    <window class='worksheet' name='NewStorageCapacity'>
+    <window class='worksheet' maximized='true' name='NewStorageCapacity'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -2160,7 +2159,7 @@
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='160'>
+          <strip size='272'>
             <card pane-specification-id='0' param='[federated.0s4ew8o07xmibl1a3pso71tol277].[none:Storage:nk]' type='color' />
           </strip>
         </edge>
@@ -2245,7 +2244,7 @@
       </viewpoint>
       <simple-id uuid='{A84DBD41-6981-4071-B7B6-563059433F1F}' />
     </window>
-    <window class='worksheet' maximized='true' name='Capital Costs Summary'>
+    <window class='worksheet' name='Capital Costs Summary'>
       <cards>
         <edge name='left'>
           <strip size='160'>
