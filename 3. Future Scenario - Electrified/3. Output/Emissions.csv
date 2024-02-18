@@ -6,9 +6,9 @@ Year,Technology,Value
 2026,Tidal,0
 2026,DieselImport,0
 2026,Forest,0
-2026,ElectricStove,123
-2026,ElectricVehicle,109
-2026,WoodBurner,455
+2026,ElectricStove,20
+2026,ElectricVehicle,31
+2026,WoodBurner,361
 2026,ElectricHeatPump,0
 2028,SolarPV,0
 2028,WindOnshore,0
@@ -17,9 +17,9 @@ Year,Technology,Value
 2028,Tidal,0
 2028,DieselImport,0
 2028,Forest,0
-2028,ElectricStove,70
-2028,ElectricVehicle,50
-2028,WoodBurner,267
+2028,ElectricStove,11
+2028,ElectricVehicle,16
+2028,WoodBurner,360
 2028,ElectricHeatPump,0
 2030,SolarPV,0
 2030,WindOnshore,0
@@ -30,5 +30,5 @@ Year,Technology,Value
 2030,Forest,0
 2030,ElectricStove,0
 2030,ElectricVehicle,0
-2030,WoodBurner,50
+2030,WoodBurner,229
 2030,ElectricHeatPump,0

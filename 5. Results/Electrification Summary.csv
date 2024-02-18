@@ -1,0 +1,4 @@
+Scenario,Power,Mobility,Cooking,Heating,Average
+BAU,100%,0%,0%,0%,25%
+Sector Coupling,100%,100%,100%,48%,87%
+Sector Coupling with Energy Efficiency,100%,100%,100%,59%,90%

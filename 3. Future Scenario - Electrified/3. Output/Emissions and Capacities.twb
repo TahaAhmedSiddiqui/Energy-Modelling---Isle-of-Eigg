@@ -181,285 +181,6 @@
         </objects>
       </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
     </datasource>
-    <datasource caption='Emissions' inline='true' name='federated.1qvpjux1awro6714hebao0ngwlg0' version='18.1'>
-      <connection class='federated'>
-        <named-connections>
-          <named-connection caption='Emissions' name='textscan.0sva8ej0xgxud61asmhzo1yz009w'>
-            <connection class='textscan' directory='C:/Users/tahaa/Documents/GitHub/Energy-Modelling---Isle-of-Eigg/3. Future Scenario - Electrified/3. Output' filename='Emissions.csv' password='' server='' />
-          </named-connection>
-        </named-connections>
-        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0sva8ej0xgxud61asmhzo1yz009w' name='Emissions.csv' table='[Emissions#csv]' type='table'>
-          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
-            <column datatype='integer' name='Year' ordinal='0' />
-            <column datatype='string' name='Technology' ordinal='1' />
-            <column datatype='real' name='Value' ordinal='2' />
-          </columns>
-        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0sva8ej0xgxud61asmhzo1yz009w' name='Emissions.csv' table='[Emissions#csv]' type='table'>
-          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
-            <column datatype='integer' name='Year' ordinal='0' />
-            <column datatype='string' name='Technology' ordinal='1' />
-            <column datatype='real' name='Value' ordinal='2' />
-          </columns>
-        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
-        <metadata-records>
-          <metadata-record class='capability'>
-            <remote-name />
-            <remote-type>0</remote-type>
-            <parent-name>[Emissions.csv]</parent-name>
-            <remote-alias />
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
-              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
-              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
-              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
-              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
-              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Year</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Year]</local-name>
-            <parent-name>[Emissions.csv]</parent-name>
-            <remote-alias>Year</remote-alias>
-            <ordinal>0</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Emissions.csv_E0A914BB50D440748DFE13F515504F42]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Technology</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[Technology]</local-name>
-            <parent-name>[Emissions.csv]</parent-name>
-            <remote-alias>Technology</remote-alias>
-            <ordinal>1</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RUS' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Emissions.csv_E0A914BB50D440748DFE13F515504F42]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Value</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[Value]</local-name>
-            <parent-name>[Emissions.csv]</parent-name>
-            <remote-alias>Value</remote-alias>
-            <ordinal>2</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Emissions.csv_E0A914BB50D440748DFE13F515504F42]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-        </metadata-records>
-      </connection>
-      <aliases enabled='yes' />
-      <column datatype='string' name='[Technology (group)]' role='dimension' type='nominal'>
-        <calculation class='categorical-bin' column='[Technology]' new-bin='true'>
-          <bin default-name='true' value='&quot;BEV, BiomassGenerator, CoalMine and 7 more&quot;'>
-            <value>&quot;BEV&quot;</value>
-            <value>&quot;BiomassGenerator&quot;</value>
-            <value>&quot;CoalMine&quot;</value>
-            <value>&quot;ElectricHeater&quot;</value>
-            <value>&quot;GasExtractor&quot;</value>
-            <value>&quot;H2Car&quot;</value>
-            <value>&quot;Power2Gas&quot;</value>
-            <value>&quot;SolarPV&quot;</value>
-            <value>&quot;WindOffshore&quot;</value>
-            <value>&quot;WindOnshore&quot;</value>
-          </bin>
-          <bin default-name='false' value='&quot;Cooking&quot;'>
-            <value>&quot;ElectricStove&quot;</value>
-          </bin>
-          <bin default-name='false' value='&quot;Heating&quot;'>
-            <value>&quot;WoodBurner&quot;</value>
-          </bin>
-          <bin default-name='false' value='&quot;Mobility&quot;'>
-            <value>&quot;ElectricVehicle&quot;</value>
-          </bin>
-          <bin default-name='false' value='&quot;Power&quot;'>
-            <value>&quot;DieselGenerator&quot;</value>
-          </bin>
-        </calculation>
-      </column>
-      <column datatype='string' name='[Technology]' role='dimension' type='nominal' />
-      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
-      <_.fcp.ObjectModelTableType.true...column caption='Emissions.csv' datatype='table' name='[__tableau_internal_object_id__].[Emissions.csv_E0A914BB50D440748DFE13F515504F42]' role='measure' type='quantitative' />
-      <column-instance column='[Technology]' derivation='None' name='[none:Technology:nk]' pivot='key' type='nominal' />
-      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
-      <style>
-        <style-rule element='mark'>
-          <encoding attr='color' field='[none:Technology:nk]' type='palette'>
-            <map to='#316a00'>
-              <bucket>&quot;BECCS&quot;</bucket>
-            </map>
-            <map to='#499894'>
-              <bucket>&quot;GasExtractor&quot;</bucket>
-            </map>
-            <map to='#59a14f'>
-              <bucket>&quot;CoalMine&quot;</bucket>
-            </map>
-            <map to='#79706e'>
-              <bucket>&quot;Power2Gas&quot;</bucket>
-            </map>
-            <map to='#86bcb6'>
-              <bucket>&quot;GasPowerPlant&quot;</bucket>
-            </map>
-            <map to='#8cd17d'>
-              <bucket>&quot;CoalPowerPlant&quot;</bucket>
-            </map>
-            <map to='#a0cbe8'>
-              <bucket>&quot;BEV&quot;</bucket>
-            </map>
-            <map to='#b6992d'>
-              <bucket>&quot;ElectricHeater&quot;</bucket>
-            </map>
-            <map to='#bab0ac'>
-              <bucket>&quot;SolarPV&quot;</bucket>
-            </map>
-            <map to='#d37295'>
-              <bucket>&quot;WindOffshore&quot;</bucket>
-            </map>
-            <map to='#e15759'>
-              <bucket>&quot;H2Car&quot;</bucket>
-            </map>
-            <map to='#f1ce63'>
-              <bucket>&quot;GasCHPPlant&quot;</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>&quot;BiomassGenerator&quot;</bucket>
-            </map>
-            <map to='#fabfd2'>
-              <bucket>&quot;WindOnshore&quot;</bucket>
-            </map>
-            <map to='#ff9d9a'>
-              <bucket>&quot;LPGCar&quot;</bucket>
-            </map>
-            <map to='#ffbe7d'>
-              <bucket>&quot;CoalCHPPlant&quot;</bucket>
-            </map>
-          </encoding>
-          <encoding attr='color' field='[Technology (group)]' type='palette'>
-            <map to='#316a00'>
-              <bucket>&quot;BECCS&quot;</bucket>
-            </map>
-            <map to='#499894'>
-              <bucket>&quot;GasExtractor&quot;</bucket>
-            </map>
-            <map to='#4d3e35'>
-              <bucket>&quot;CoalCHPPlant&quot;</bucket>
-            </map>
-            <map to='#4e79a7'>
-              <bucket>&quot;Power&quot;</bucket>
-            </map>
-            <map to='#59a14f'>
-              <bucket>&quot;CoalMine&quot;</bucket>
-            </map>
-            <map to='#59a14f'>
-              <bucket>&quot;ElectricVehicle&quot;</bucket>
-            </map>
-            <map to='#59a14f'>
-              <bucket>&quot;Forest&quot;</bucket>
-            </map>
-            <map to='#754937'>
-              <bucket>&quot;CoalPowerPlant&quot;</bucket>
-            </map>
-            <map to='#76b7b2'>
-              <bucket>&quot;ElectricStove&quot;</bucket>
-            </map>
-            <map to='#76b7b2'>
-              <bucket>&quot;GasStove&quot;</bucket>
-            </map>
-            <map to='#79706e'>
-              <bucket>&quot;Power2Gas&quot;</bucket>
-            </map>
-            <map to='#9c755f'>
-              <bucket>&quot;Cooking&quot;</bucket>
-            </map>
-            <map to='#9c755f'>
-              <bucket>&quot;ElectricHeatPump&quot;</bucket>
-            </map>
-            <map to='#a0cbe8'>
-              <bucket>&quot;BEV&quot;</bucket>
-            </map>
-            <map to='#ae393f'>
-              <bucket>&quot;GasCHPPlant&quot;</bucket>
-            </map>
-            <map to='#b07aa1'>
-              <bucket>&quot;Tidal&quot;</bucket>
-            </map>
-            <map to='#b6992d'>
-              <bucket>&quot;ElectricHeater&quot;</bucket>
-            </map>
-            <map to='#b7c7cf'>
-              <bucket>&quot;LPGCar&quot;</bucket>
-            </map>
-            <map to='#bab0ac'>
-              <bucket>&quot;Mobility&quot;</bucket>
-            </map>
-            <map to='#bab0ac'>
-              <bucket>&quot;SolarPV&quot;</bucket>
-            </map>
-            <map to='#d37295'>
-              <bucket>&quot;WindOffshore&quot;</bucket>
-            </map>
-            <map to='#e15759'>
-              <bucket>&quot;H2Car&quot;</bucket>
-            </map>
-            <map to='#e15759'>
-              <bucket>&quot;Heating&quot;</bucket>
-            </map>
-            <map to='#e54213'>
-              <bucket>&quot;GasPowerPlant&quot;</bucket>
-            </map>
-            <map to='#edc948'>
-              <bucket>&quot;HydroPower&quot;</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>&quot;BEV, BiomassGenerator, CoalMine and 7 more&quot;</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>&quot;BiomassGenerator&quot;</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>&quot;DieselImport&quot;</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>&quot;ICEVehicle&quot;</bucket>
-            </map>
-            <map to='#fabfd2'>
-              <bucket>&quot;WindOnshore&quot;</bucket>
-            </map>
-          </encoding>
-        </style-rule>
-      </style>
-      <semantic-values>
-        <semantic-value key='[Country].[Name]' value='&quot;Germany&quot;' />
-      </semantic-values>
-      <date-options start-of-week='monday' />
-      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-        <objects>
-          <object caption='Emissions.csv' id='Emissions.csv_E0A914BB50D440748DFE13F515504F42'>
-            <properties context=''>
-              <relation connection='textscan.0sva8ej0xgxud61asmhzo1yz009w' name='Emissions.csv' table='[Emissions#csv]' type='table'>
-                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
-                  <column datatype='integer' name='Year' ordinal='0' />
-                  <column datatype='string' name='Technology' ordinal='1' />
-                  <column datatype='real' name='Value' ordinal='2' />
-                </columns>
-              </relation>
-            </properties>
-          </object>
-        </objects>
-      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-    </datasource>
     <datasource caption='Emissions Summary' inline='true' name='federated.0cecc9g0q0kkoo1fnyk3o0vmciml' version='18.1'>
       <connection class='federated'>
         <named-connections>
@@ -1162,6 +883,285 @@
                   <column datatype='string' name='F1' ordinal='0' />
                   <column datatype='integer' name='F2' ordinal='1' />
                   <column datatype='integer' name='F3' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Emissions' inline='true' name='federated.1qvpjux1awro6714hebao0ngwlg0' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Emissions' name='textscan.0sva8ej0xgxud61asmhzo1yz009w'>
+            <connection class='textscan' directory='C:/Users/tahaa/Documents/GitHub/Energy-Modelling---Isle-of-Eigg/3. Future Scenario - Electrified/3. Output' filename='Emissions.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0sva8ej0xgxud61asmhzo1yz009w' name='Emissions.csv' table='[Emissions#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='string' name='Technology' ordinal='1' />
+            <column datatype='real' name='Value' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0sva8ej0xgxud61asmhzo1yz009w' name='Emissions.csv' table='[Emissions#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='string' name='Technology' ordinal='1' />
+            <column datatype='real' name='Value' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Emissions.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Emissions.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Emissions.csv_E0A914BB50D440748DFE13F515504F42]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Technology</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Technology]</local-name>
+            <parent-name>[Emissions.csv]</parent-name>
+            <remote-alias>Technology</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Emissions.csv_E0A914BB50D440748DFE13F515504F42]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Value]</local-name>
+            <parent-name>[Emissions.csv]</parent-name>
+            <remote-alias>Value</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Emissions.csv_E0A914BB50D440748DFE13F515504F42]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Technology (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[Technology]' new-bin='true'>
+          <bin default-name='true' value='&quot;BEV, BiomassGenerator, CoalMine and 7 more&quot;'>
+            <value>&quot;BEV&quot;</value>
+            <value>&quot;BiomassGenerator&quot;</value>
+            <value>&quot;CoalMine&quot;</value>
+            <value>&quot;ElectricHeater&quot;</value>
+            <value>&quot;GasExtractor&quot;</value>
+            <value>&quot;H2Car&quot;</value>
+            <value>&quot;Power2Gas&quot;</value>
+            <value>&quot;SolarPV&quot;</value>
+            <value>&quot;WindOffshore&quot;</value>
+            <value>&quot;WindOnshore&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Cooking&quot;'>
+            <value>&quot;ElectricStove&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Heating&quot;'>
+            <value>&quot;WoodBurner&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Mobility&quot;'>
+            <value>&quot;ElectricVehicle&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Power&quot;'>
+            <value>&quot;DieselGenerator&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='string' name='[Technology]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Emissions.csv' datatype='table' name='[__tableau_internal_object_id__].[Emissions.csv_E0A914BB50D440748DFE13F515504F42]' role='measure' type='quantitative' />
+      <column-instance column='[Technology]' derivation='None' name='[none:Technology:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Technology:nk]' type='palette'>
+            <map to='#316a00'>
+              <bucket>&quot;BECCS&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;GasExtractor&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;CoalMine&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Power2Gas&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;GasPowerPlant&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;CoalPowerPlant&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;BEV&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;ElectricHeater&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;SolarPV&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;WindOffshore&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;H2Car&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;GasCHPPlant&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;BiomassGenerator&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;WindOnshore&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;LPGCar&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;CoalCHPPlant&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[Technology (group)]' type='palette'>
+            <map to='#316a00'>
+              <bucket>&quot;BECCS&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;GasExtractor&quot;</bucket>
+            </map>
+            <map to='#4d3e35'>
+              <bucket>&quot;CoalCHPPlant&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Power&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;CoalMine&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;ElectricVehicle&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Forest&quot;</bucket>
+            </map>
+            <map to='#754937'>
+              <bucket>&quot;CoalPowerPlant&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;ElectricStove&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;GasStove&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Power2Gas&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;Cooking&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;ElectricHeatPump&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;BEV&quot;</bucket>
+            </map>
+            <map to='#ae393f'>
+              <bucket>&quot;GasCHPPlant&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Tidal&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;ElectricHeater&quot;</bucket>
+            </map>
+            <map to='#b7c7cf'>
+              <bucket>&quot;LPGCar&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Mobility&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;SolarPV&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;WindOffshore&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;H2Car&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Heating&quot;</bucket>
+            </map>
+            <map to='#e54213'>
+              <bucket>&quot;GasPowerPlant&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;HydroPower&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;BEV, BiomassGenerator, CoalMine and 7 more&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;BiomassGenerator&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;DieselImport&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;ICEVehicle&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;WindOnshore&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Germany&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Emissions.csv' id='Emissions.csv_E0A914BB50D440748DFE13F515504F42'>
+            <properties context=''>
+              <relation connection='textscan.0sva8ej0xgxud61asmhzo1yz009w' name='Emissions.csv' table='[Emissions#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Year' ordinal='0' />
+                  <column datatype='string' name='Technology' ordinal='1' />
+                  <column datatype='real' name='Value' ordinal='2' />
                 </columns>
               </relation>
             </properties>
@@ -2049,7 +2049,7 @@
     </worksheet>
   </worksheets>
   <windows source-height='156'>
-    <window class='worksheet' name='AnnualTechnologyEmissions'>
+    <window class='worksheet' maximized='true' name='AnnualTechnologyEmissions'>
       <cards>
         <edge name='left'>
           <strip size='300'>
@@ -2303,7 +2303,7 @@
       </viewpoint>
       <simple-id uuid='{A84DBD41-6981-4071-B7B6-563059433F1F}' />
     </window>
-    <window class='worksheet' maximized='true' name='Capital Costs Summary'>
+    <window class='worksheet' name='Capital Costs Summary'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -2433,137 +2433,126 @@
     </thumbnail>
     <thumbnail height='192' name='AnnualTechnologyEmissions' width='192'>
       iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
-      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
-      hWNcAAAAAElFTkSuQmCC
+      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
     </thumbnail>
     <thumbnail height='192' name='Capital Costs Summary' width='192'>
       iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
