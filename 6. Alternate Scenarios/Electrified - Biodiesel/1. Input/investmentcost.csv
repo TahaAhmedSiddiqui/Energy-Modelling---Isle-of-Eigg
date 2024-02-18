@@ -1,0 +1,11 @@
+﻿technology,value
+DieselGenerator,200
+HydroPower,5629
+WindOnshore,2700
+SolarPV,500
+Forest,1
+DieselImport,1
+WoodBurner,1
+ElectricStove,1
+ElectricVehicle,1
+ElectricHeatPump,1

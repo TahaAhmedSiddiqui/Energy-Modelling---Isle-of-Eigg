@@ -768,6 +768,128 @@
         </objects>
       </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
     </datasource>
+    <datasource caption='Emissions Summary' inline='true' name='federated.0cecc9g0q0kkoo1fnyk3o0vmciml' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Capital Costs Summary' name='textscan.1404ooy1jlw39j1768r4q19vxcf1'>
+            <connection class='textscan' directory='C:/Users/tahaa/Documents/GitHub/Energy-Modelling---Isle-of-Eigg/3. Future Scenario - Electrified/3. Output' filename='Capital Costs Summary.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1404ooy1jlw39j1768r4q19vxcf1' name='Emissions Summary.csv' table='[Emissions Summary#csv]' type='table'>
+          <columns character-set='UTF-8' header='no' locale='en_GB' separator=','>
+            <column datatype='string' name='F1' ordinal='0' />
+            <column datatype='integer' name='F2' ordinal='1' />
+            <column datatype='integer' name='F3' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1404ooy1jlw39j1768r4q19vxcf1' name='Emissions Summary.csv' table='[Emissions Summary#csv]' type='table'>
+          <columns character-set='UTF-8' header='no' locale='en_GB' separator=','>
+            <column datatype='string' name='F1' ordinal='0' />
+            <column datatype='integer' name='F2' ordinal='1' />
+            <column datatype='integer' name='F3' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Emissions Summary.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;false&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Emissions Summary.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Emissions Summary.csv_62A839E9C5214D868E608BF392FF6B48]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F2]</local-name>
+            <parent-name>[Emissions Summary.csv]</parent-name>
+            <remote-alias>F2</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Emissions Summary.csv_62A839E9C5214D868E608BF392FF6B48]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F3</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F3]</local-name>
+            <parent-name>[Emissions Summary.csv]</parent-name>
+            <remote-alias>F3</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Emissions Summary.csv_62A839E9C5214D868E608BF392FF6B48]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Scenario' datatype='string' name='[F1]' role='dimension' type='nominal' />
+      <column caption='Year' datatype='integer' name='[F2]' role='measure' type='quantitative' />
+      <column caption='Emissions' datatype='integer' name='[F3]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Emissions Summary.csv' datatype='table' name='[__tableau_internal_object_id__].[Emissions Summary.csv_62A839E9C5214D868E608BF392FF6B48]' role='measure' type='quantitative' />
+      <column-instance column='[F1]' derivation='None' name='[none:F1:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:F1:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;BAU&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Sector Coupling with Energy Efficiency&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Sector Coupling&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Germany&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Emissions Summary.csv' id='Emissions Summary.csv_62A839E9C5214D868E608BF392FF6B48'>
+            <properties context=''>
+              <relation connection='textscan.1404ooy1jlw39j1768r4q19vxcf1' name='Emissions Summary.csv' table='[Emissions Summary#csv]' type='table'>
+                <columns character-set='UTF-8' header='no' locale='en_GB' separator=','>
+                  <column datatype='string' name='F1' ordinal='0' />
+                  <column datatype='integer' name='F2' ordinal='1' />
+                  <column datatype='integer' name='F3' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
     <datasource caption='Emissions' inline='true' name='federated.1qvpjux1awro6714hebao0ngwlg0' version='18.1'>
       <connection class='federated'>
         <named-connections>
@@ -1034,128 +1156,6 @@
                   <column datatype='integer' name='Year' ordinal='0' />
                   <column datatype='string' name='Technology' ordinal='1' />
                   <column datatype='real' name='Value' ordinal='2' />
-                </columns>
-              </relation>
-            </properties>
-          </object>
-        </objects>
-      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-    </datasource>
-    <datasource caption='Emissions Summary' inline='true' name='federated.0cecc9g0q0kkoo1fnyk3o0vmciml' version='18.1'>
-      <connection class='federated'>
-        <named-connections>
-          <named-connection caption='Capital Costs Summary' name='textscan.1404ooy1jlw39j1768r4q19vxcf1'>
-            <connection class='textscan' directory='C:/Users/tahaa/Documents/GitHub/Energy-Modelling---Isle-of-Eigg/3. Future Scenario - Electrified/3. Output' filename='Capital Costs Summary.csv' password='' server='' />
-          </named-connection>
-        </named-connections>
-        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1404ooy1jlw39j1768r4q19vxcf1' name='Emissions Summary.csv' table='[Emissions Summary#csv]' type='table'>
-          <columns character-set='UTF-8' header='no' locale='en_GB' separator=','>
-            <column datatype='string' name='F1' ordinal='0' />
-            <column datatype='integer' name='F2' ordinal='1' />
-            <column datatype='integer' name='F3' ordinal='2' />
-          </columns>
-        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1404ooy1jlw39j1768r4q19vxcf1' name='Emissions Summary.csv' table='[Emissions Summary#csv]' type='table'>
-          <columns character-set='UTF-8' header='no' locale='en_GB' separator=','>
-            <column datatype='string' name='F1' ordinal='0' />
-            <column datatype='integer' name='F2' ordinal='1' />
-            <column datatype='integer' name='F3' ordinal='2' />
-          </columns>
-        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
-        <metadata-records>
-          <metadata-record class='capability'>
-            <remote-name />
-            <remote-type>0</remote-type>
-            <parent-name>[Emissions Summary.csv]</parent-name>
-            <remote-alias />
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
-              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
-              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
-              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
-              <attribute datatype='string' name='header-row'>&quot;false&quot;</attribute>
-              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
-              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>F1</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[F1]</local-name>
-            <parent-name>[Emissions Summary.csv]</parent-name>
-            <remote-alias>F1</remote-alias>
-            <ordinal>0</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RGB' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Emissions Summary.csv_62A839E9C5214D868E608BF392FF6B48]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>F2</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[F2]</local-name>
-            <parent-name>[Emissions Summary.csv]</parent-name>
-            <remote-alias>F2</remote-alias>
-            <ordinal>1</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Emissions Summary.csv_62A839E9C5214D868E608BF392FF6B48]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>F3</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[F3]</local-name>
-            <parent-name>[Emissions Summary.csv]</parent-name>
-            <remote-alias>F3</remote-alias>
-            <ordinal>2</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Emissions Summary.csv_62A839E9C5214D868E608BF392FF6B48]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-        </metadata-records>
-      </connection>
-      <aliases enabled='yes' />
-      <column caption='Scenario' datatype='string' name='[F1]' role='dimension' type='nominal' />
-      <column caption='Year' datatype='integer' name='[F2]' role='measure' type='quantitative' />
-      <column caption='Emissions' datatype='integer' name='[F3]' role='measure' type='quantitative' />
-      <_.fcp.ObjectModelTableType.true...column caption='Emissions Summary.csv' datatype='table' name='[__tableau_internal_object_id__].[Emissions Summary.csv_62A839E9C5214D868E608BF392FF6B48]' role='measure' type='quantitative' />
-      <column-instance column='[F1]' derivation='None' name='[none:F1:nk]' pivot='key' type='nominal' />
-      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
-      <style>
-        <style-rule element='mark'>
-          <encoding attr='color' field='[none:F1:nk]' type='palette'>
-            <map to='#4e79a7'>
-              <bucket>&quot;BAU&quot;</bucket>
-            </map>
-            <map to='#59a14f'>
-              <bucket>&quot;Sector Coupling with Energy Efficiency&quot;</bucket>
-            </map>
-            <map to='#edc948'>
-              <bucket>&quot;Sector Coupling&quot;</bucket>
-            </map>
-          </encoding>
-        </style-rule>
-      </style>
-      <semantic-values>
-        <semantic-value key='[Country].[Name]' value='&quot;Germany&quot;' />
-      </semantic-values>
-      <date-options start-of-week='monday' />
-      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-        <objects>
-          <object caption='Emissions Summary.csv' id='Emissions Summary.csv_62A839E9C5214D868E608BF392FF6B48'>
-            <properties context=''>
-              <relation connection='textscan.1404ooy1jlw39j1768r4q19vxcf1' name='Emissions Summary.csv' table='[Emissions Summary#csv]' type='table'>
-                <columns character-set='UTF-8' header='no' locale='en_GB' separator=','>
-                  <column datatype='string' name='F1' ordinal='0' />
-                  <column datatype='integer' name='F2' ordinal='1' />
-                  <column datatype='integer' name='F3' ordinal='2' />
                 </columns>
               </relation>
             </properties>
